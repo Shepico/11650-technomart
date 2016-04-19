@@ -6,34 +6,30 @@
   </head>
   <body>
     <header>
-      <section class="info-user">
+      <div class="info-user">
         <div class="logo">
-          <h1>ТЕХНОМАРТ</h1>
+          <a href="#"><h1>ТЕХНОМАРТ</h1></a>
         </div>
         <div class="iu-search">
-           <a href=#>
-            <img src="//placehold.it/20x20" alt="Поиск" width="20" height="20">
-           </a> 
-           <span>Поиск:</span>
+          <label for="in-search">Поиск:</label>    
+          <input type="text" id="in-search" name="in-search">          
         </div>
         <div class="iu-marker">
-           <a href=#>
-            <img src="//placehold.it/20x20" alt="Закладки" width="20" height="20">
-           </a> 
-           <span>Закладки: 0</span>
+           <a href="#">
+            Закладки: 0
+           </a>            
         </div>
         <div class="iu-basket">
-           <a href=#>
-            <img src="//placehold.it/20x20" alt="Корзина" width="20" height="20">
-           </a> 
-           <span>Корзина: 0</span>
+           <a href="#">
+            Корзина: 0
+           </a>            
         </div>
         <div class="iu-checkout">
-           <a href=#>Оформить заказ</a>            
+           <a href="#">Оформить заказ</a>            
         </div>
-      </section>
-      <section class="info">
-        <div class="info-shop>
+      </div>
+      <div class="info">
+        <div class="info-shop">
           Интернет-магазин <br> 
           строительных материалов <br>
           и инструментов для ремонта          
@@ -48,36 +44,89 @@
           </div>
         </div>      
         <div class="info-login">
-          <a href=#>
-            <img src="//placehold.it/20x20" alt="Войти" width="20" height="20">
+          <a href="#">
             Войти
           </a>
-          <a href=#>Регистрация</a>
+          <a href="#">Регистрация</a>
         </div>
         <nav class="info-top-menu">
           <ul>
-            <li><a href=#>Главная</a></li>
-            <li><a href=#>Компания</a></li>
-            <li><a href=#>Каталог</a></li>
-            <li><a href=#>Новости</a></li>
-            <li><a href=#>Спецпредложения</a></li>
-            <li><a href=#>Доставка</a></li>
-            <li><a href=#>Товары</a></li>            
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Товары</a></li>            
           </ul>
         </nav>
-       </section> 
+       </div> 
     </header>
     <main>
-      <section class="catalogs">
-      </section>
-      <section class="goods">
-      <h2>
+      <!--Модульная верствка-->
+      <div class="wrapper-catalog">
+        <div class="catalog">
+          <div class="catalog-row">
+            <div class="catalog-col s-4">
+              <a href="#">
+                <div class="catalog-col-item color-yellow">
+                  Материалы
+                  <span>на любой вкус</span>
+                </div>
+              </a>
+            </div>  
+            <div class="catalog-col s-4">
+              <a href="#">
+                <div class="catalog-col-item color-blue">
+                  Инструмент
+                  <span>на все случаи</span>
+                </div>
+               </a> 
+            </div>  
+            <div class="catalog-col s-4">
+              <a href="#">
+                <div class="catalog-col-item color-purple">
+                  Техника
+                  <span>для стройки</span>
+                </div>
+              </a> 
+            </div>  
+          </div>
+          
+          <div class="catalog-row">
+            <div class="catalog-col s-8">
+              <div class="catalog-col-slider">
+                <h2>перфораторы</h2>
+                <span>Настоящие мужские игрушки</span>
+                <a href="#">Открыть каталог</a>
+              </div>
+            </div>  
+            <div class="catalog-col s-4">
+              <a href="#">
+                <div class="catalog-col-item color-green">
+                  Скидки 50%
+                  <span>на 350 товаров</span>
+                </div>
+              </a>
+              <a href="#">
+                <div class="catalog-col-item color-yellow">
+                  Доставка
+                  <span>бесплатно</span>
+                </div>
+              </a> 
+            </div>    
+          </div>
+        </div>
+      </div>  
+      <!--Конец модульной верстки-->
+      <div class="goods">
+        <h2>
           Популярные товары
-          <a href=#>Все популярные товары</a>
+          <a href="#">Все популярные товары</a>
         </h2>
         <ul>          
           <li>
-            <a href=#>
+            <a href="#">
               <article class="item">
                 <div class="item-picture">
                   <img src="//placehold.it/220x140" alt="" width="220" height="140">
@@ -95,7 +144,7 @@
             </a>
           </li>
           <li>
-            <a href=#>
+            <a href="#">
               <article class="item">
                 <div class="item-picture">
                   <img src="//placehold.it/220x140" alt="" width="220" height="140">
@@ -113,7 +162,7 @@
             </a>
           </li>
           <li>
-            <a href=#>
+            <a href="#">
               <article class="item">
                 <div class="item-picture">
                   <img src="//placehold.it/220x140" alt="" width="220" height="140">
@@ -131,7 +180,7 @@
             </a>
           </li>
           <li>
-            <a href=#>
+            <a href="#">
               <article class="item new">
                 <div class="item-picture">
                   <img src="//placehold.it/220x140" alt="" width="220" height="140">
@@ -149,72 +198,72 @@
             </a>
           </li>
         </ul>
-      </section>
-      <section class="fabricator">
+      </div>
+      <div class="fabricator">
         <h2>
           ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:
-          <a href=#>ВСЕ ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</a>
+          <a href="#">ВСЕ ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</a>
         </h2>
         <ul>          
           <li>
-            <a href=#>
+            <a href="#">
               <article class="fabricator-item">
                   <img src="//placehold.it/220x145" alt="" width="220" height="145">
               </article> 
             </a>
           </li>
           <li>
-            <a href=#>
+            <a href="#">
               <article class="fabricator-item">
                   <img src="//placehold.it/220x145" alt="" width="220" height="145">
               </article> 
             </a>
           </li>
           <li>
-            <a href=#>
+            <a href="#">
               <article class="fabricator-item">
                   <img src="//placehold.it/220x145" alt="" width="220" height="145">
               </article> 
             </a>
           </li>
           <li>
-            <a href=#>
+            <a href="#">
               <article class="fabricator-item">
                   <img src="//placehold.it/220x145" alt="" width="220" height="145">
               </article> 
             </a>
           </li>
           <li>
-            <a href=#>
+            <a href="#">
               <article class="fabricator-item">
                   <img src="//placehold.it/220x145" alt="" width="220" height="145">
               </article> 
             </a>
           </li>
           <li>
-            <a href=#>
+            <a href="#">
               <article class="fabricator-item">
                   <img src="//placehold.it/220x145" alt="" width="220" height="145">
               </article> 
             </a>
           </li>
           <li>
-            <a href=#>
+            <a href="#">
               <article class="fabricator-item">
                   <img src="//placehold.it/220x145" alt="" width="220" height="145">
               </article> 
             </a>
           </li>
           <li>
-            <a href=#>
+            <a href="#">
               <article class="fabricator-item">
                   <img src="//placehold.it/220x145" alt="" width="220" height="145">
               </article> 
             </a>
           </li>
         </ul>
-      </section>
-      <section class="services">
+      </div>
+      <div class="services">
         <div class="services-head>
           <h2>Сервисы</h2>
           <span>
@@ -225,9 +274,9 @@
         <div class="services-slider">
           <div class="services-slider-menu">
             <ul>
-              <li class="ss-menu-active"><a href=#>Доставка</a></li>
-              <li><a href=#>Гарантия</a></li>
-              <li><a href=#>Кредит</a></li>
+              <li class="ss-menu-active"><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Кредит</a></li>
             </ul>
           </div>
           <div class="services-slider-content">
@@ -239,8 +288,8 @@
             <img src="//placehold.it/210x150" alt="Автодоставка" width="210" height="150">
           </div>
         </div>        
-      </section>
-      <section class="about">
+      </div>
+      <div class="about">
         <div class="about-company">
           <h2>Компания "Техномарт"</h2>
           <p>
@@ -256,27 +305,27 @@
             <li>Автотрединг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href=#>Подробнее о компании</a>
+          <a href="#">Подробнее о компании</a>
         </div>
         <div class="about-contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать свой товар сами, заехав в наш офис:</p>
           <img src="//placehold.it/300x160" alt="Карта" width="210" height="150">
-          <a href=#>Заблудились? Напишите нам!</a>
+          <a href="#">Заблудились? Напишите нам!</a>
         </div>
-      </section>
+      </div>
     </main>
     <footer>
-      <section class="footer-top">
+      <div class="footer-top">
         <div class="footer-top-one">
           <div class="logo">ТЕХНОМАРТ</div>
           <nav class="footer-top-one-menu">
             <ul>
-              <li><a href=#>Компания</a></li>
-              <li><a href=#>Новости</a></li>
-              <li><a href=#>Каталог</a></li>
-              <li><a href=#>Доставка</a></li>
-              <li><a href=#>Контакты</a></li>
+              <li><a href="#">Компания</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
             </ul>
           </nav>          
         </div>
@@ -286,33 +335,34 @@
           </div>
           <nav class="footer-top-two-menu">
             <ul>
-              <li><a href=#>Материалы</a></li>
-              <li><a href=#>Техника</a></li>
-              <li><a href=#>Инструмент</a></li>
-              <li><a href=#>Спецпредложения</a></li>              
+              <li><a href="#">Материалы</a></li>
+              <li><a href="#">Техника</a></li>
+              <li><a href="#">Инструмент</a></li>
+              <li><a href="#">Спецпредложения</a></li>              
             </ul>
           </nav>
         </div>
-      </section>
-      <section class="footer-bottom">
-        <section class="copyright">
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
           &copy 2010-2016 Компания "Техномарт"<br>
           Все права защищены
-        </section>
-        <section class="social">
+        </div>
+        <div class="social">
+          <!--Будет через CSS пока для вида-->
           <img src="//placehold.it/40x40" alt="В контакте" width="40" height="40">
           <img src="//placehold.it/40x40" alt="Фейсбук" width="40" height="40">
           <img src="//placehold.it/40x40" alt="Инстаграм" width="40" height="40">
-        </section>
-        <section class="feedback">
+        </div>
+        <div class="feedback">
           <span>Обратная связь<span><br>
           <a href="mailto:mail@htmlacademy.ru">mailto:mail@htmlacademy.ru</a>
-        </section>
-        <section class="design">
+        </div>
+        <div class="design">
           <span>Разработано - </span><br>
           <a href="htmlacademy.ru">htmlacademy.ru</a>
-        </section>
-      </section>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
