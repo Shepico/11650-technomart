@@ -1,0 +1,19 @@
+body{
+  font-family: "helvetica", "Arial", sans-serif;
+  font-size: 12px;
+  color: #000000;
+  font-weight: normal; /*в качестве задания*/
+}
+
+h1{
+  font-size: 18px;
+  color: #ff0006;
+  font-weight: bold; /*в качестве задания*/ 
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 16px;
+  color: #0036ff;  
+  text-transform: uppercase;
+}
