@@ -6,73 +6,78 @@
     <title>О странице</title>
   </head>
   <body>
-    <header>
-      <div class="info-user">
-        <div class="logo">
-          <a href="index.html"><h1>ТЕХНОМАРТ</h1></a>
-        </div>
-        <div class="iu-search">
-          <label for="in-search">Поиск:</label>    
-          <input type="text" id="in-search" name="in-search">          
-        </div>
-        <div class="iu-marker">
-           <a href="#">
-            Закладки: 0
-           </a>            
-        </div>
-        <div class="iu-basket">
-           <a href="#">
-            Корзина: 0
-           </a>            
-        </div>
-        <div class="iu-checkout">
-           <a href="#">Оформить заказ</a>            
-        </div>
-      </div>
-      <div class="info">
-        <div class="info-shop">
-          Интернет-магазин <br> 
-          строительных материалов <br>
-          и инструментов для ремонта          
-        </div>
-        <div class="info-contacts">
-          <div class="info-contacts-tel">
-            <img src="//placehold.it/20x20" alt="Телефон" width="20" height="20">  
-            <span>+7 (812) 555-05-55</span>
+      <header>
+     
+        <div class="wrapper-info-user">
+          <div class="info-user wrapper">
+            <h1 class="logo inl-block">
+              <a href="index.html">ТЕХНОМАРТ</a>
+            </h1>
+            <div class="iu-search inl-block">
+              <label for="in-search">Поиск:</label>    
+              <input type="text" id="in-search" name="in-search">          
+            </div>
+            <div class="iu-marker inl-block">
+               <a href="#"> Закладки: 0 </a>            
+            </div>
+            <div class="iu-basket inl-block">
+               <a href="#"> Корзина: 0 </a>            
+            </div>
+            <div class="iu-checkout inl-block">
+               <a href="#">Оформить заказ</a>            
+            </div>
           </div>
-          <div class="info-contacts-address">
-            <span>г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
+        </div>  
+      <div class="wrapper"> 
+        <div class="info clearfix">
+          <div class="info-shop">
+            Интернет-магазин <br> 
+            строительных материалов <br>
+            и инструментов для ремонта          
           </div>
-        </div>      
-        <div class="info-login">
-          <a href="#">
-            Войти
-          </a>
-          <a href="#">Регистрация</a>
-        </div>
-        <nav class="info-top-menu">
-          <ul>
-            <li><a href="index.html">Главная</a></li>
+          <div class="info-contacts">
+            <div class="info-contacts-tel">
+              <img src="//placehold.it/20x20" alt="Телефон" width="20" height="20">  
+              <span>+7 (812) 555-05-55</span>
+            </div>
+            <div class="info-contacts-address">
+              <span>г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
+            </div>
+          </div>      
+          <div class="info-login">
+            <a href="#">
+              Войти
+            </a>
+            <a href="#">Регистрация</a>
+          </div>
+        </div>  
+        <nav>
+          <ul class="info-top-menu">
+            <li><a href="#">Главная</a></li>
             <li><a href="#">Компания</a></li>
-            <li><a href="#">Каталог</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Спецпредложения</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Товары</a></li>            
           </ul>
-        </nav>
-       </div> 
+        </nav> 
+      </div>    
     </header>
+    <div class="wrapper">
     <div class="breadcrumbs">
       <ul>
+        <li><a href="#">Домой</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li>Перфораторы</li> 
       </ul>    
     </div>
+    </div>
     <main>
+      <div class="wrapper">
       <h1>Перфораторы</h1>
-      <div class="goods">
+      <div class="goods clearfix">
         <div class="goods-filter">
           <h2>Фильтр:</h2>
           <form class="selection" action="#" method="post">
@@ -81,7 +86,7 @@
               <label for="in-cost-range">Цена</label>  
               <input type="range" id="in-cost-range" name="in-cost-range" min=0 max=30000>              
               <input type="text" id="in-cost-min" name="in-cost-min">
-              <!--Думаю черту,мужду двумя полями, поставить в CSS-->
+              <!--Думаю черту,между двумя полями, поставить в CSS-->
               <input type="text" id="in-cost-max" name="in-cost-max">              
             </fieldset>
             
@@ -119,7 +124,7 @@
         </div>
         <div class="goods-page">
           <div class="goods-page-sort">
-            <h3>сортировка</h3>
+            <h2>Cортировка</h2>
             <ul class="gps-select-menu">
               <li><a href="#">по цене</a></li>
               <li><a href="#">по типу</a></li>
@@ -157,7 +162,7 @@
                 25500
               </div>
             </div> 
-            <div class="item">
+            <div class="item item-last">
               <div class="item-picture">
                 <a href="#">купить</a>
                 <a href="#">в закладки</a>
@@ -201,7 +206,7 @@
                 25500
               </div>
             </div> 
-            <div class="item">
+            <div class="item item-last">
               <div class="item-picture">
                 <img src="img/bfg-3000.jpg" alt="bfg-3000" width="127" height="112">
               </div>
@@ -244,7 +249,7 @@
                 25500
               </div>
             </div> 
-            <div class="item">
+            <div class="item item-last">
               <div class="item-picture">
                 <img src="img/bfg-3000.jpg" alt="bfg-3000" width="127" height="112">
               </div>
@@ -270,69 +275,73 @@
           </div>
         </div>
       </div>
+      </div> 
       <div class="about-goods">
+        <div class="wrapper"
         <h2>Пара слов о перфораторах</h2>
         <p>
           Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
           Существуют электромеханические и пневматические перфораторы. Современный модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
           В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молот и ударная дрель.
         </p>
+        </div>
       </div>
     </main>
-    <footer>
+   <footer>
+      
       <div class="footer-top">
-        <div class="footer-top-one">
-          <div class="logo">
-<<<<<<< HEAD
-            <a href="#"><h1>ТЕХНОМАРТ</h1></a>
-=======
-            <a href="index.html"><h1>ТЕХНОМАРТ</h1></a>
->>>>>>> origin/master
+        <div class="wrapper">
+          <div class="footer-top-one">
+            <div class="logo">
+              <a href="index.html"><h1>ТЕХНОМАРТ</h1></a>
+            </div>
+              <ul class="nav-footer-one-menu">
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            
           </div>
-          <nav class="footer-top-one-menu">
-            <ul>
-              <li><a href="#">Компания</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Каталог</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </nav>          
-        </div>
-        <div class="footer-top-two">
-          <div class="footer-top-two-address">
-            г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8 +7 (812) 555-05-55 
+          <div class="footer-top-two">
+            <div class="footer-top-two-address">
+              г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8 <br>
+              +7 (812) 555-05-55 
+            </div>
+            
+              <ul class="nav-footer-two-menu">
+                <li><a href="#">Материалы</a></li>
+                <li><a href="#">Техника</a></li>
+                <li><a href="#">Инструмент</a></li>
+                <li><a href="#">Спецпредложения</a></li>              
+              </ul>
+            
           </div>
-          <nav class="footer-top-two-menu">
-            <ul>
-              <li><a href="#">Материалы</a></li>
-              <li><a href="#">Техника</a></li>
-              <li><a href="#">Инструмент</a></li>
-              <li><a href="#">Спецпредложения</a></li>              
-            </ul>
-          </nav>
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="copyright">
-          &#169; 2010-2016 Компания "Техномарт"<br>
-          Все права защищены
+         <div class="wrapper"> 
+          <div class="fb-copyright">
+            &#169; 2010-2016 Компания "Техномарт"<br>
+            Все права защищены
+          </div>
+          <div class="fb-social">
+            <!--Будет через CSS пока для вида-->
+            <img src="//placehold.it/40x40" alt="В контакте" width="40" height="40">
+            <img src="//placehold.it/40x40" alt="Фейсбук" width="40" height="40">
+            <img src="//placehold.it/40x40" alt="Инстаграм" width="40" height="40">
+          </div>
+          <div class="fb-feedback">
+            <span>Обратная связь</span><br>
+            <a href="mailto:mail@htmlacademy.ru">mailto:mail@htmlacademy.ru</a>
+          </div>
+          <div class="fb-design">
+            <span>Разработано - </span><br>
+            <a href="htmlacademy.ru">htmlacademy.ru</a>
+          </div>
         </div>
-        <div class="social">
-          <!--Будет через CSS пока для вида-->
-          <img src="//placehold.it/40x40" alt="В контакте" width="40" height="40">
-          <img src="//placehold.it/40x40" alt="Фейсбук" width="40" height="40">
-          <img src="//placehold.it/40x40" alt="Инстаграм" width="40" height="40">
-        </div>
-        <div class="feedback">
-          <span>Обратная связь</span><br>
-          <a href="mailto:mail@htmlacademy.ru">mailto:mail@htmlacademy.ru</a>
-        </div>
-        <div class="design">
-          <span>Разработано - </span><br>
-          <a href="htmlacademy.ru">htmlacademy.ru</a>
-        </div>
-      </div>
+      </div>  
     </footer>
   </body>
 </html>
