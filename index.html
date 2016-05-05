@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/item.css">
     <link rel="stylesheet" href="css/top-catalog.css">
     <link rel="stylesheet" href="css/delivery.css">
@@ -95,59 +96,55 @@
     <main>
       <!--Модульная верстка-->
       <div class="wrapper-catalog wrapper">
-        <div class="catalog">
-          <div class="catalog-row">
-            <div class="catalog-col s-4">
-              <a href="#">
-                <div class="catalog-col-item color-yellow">
-                  Материалы
-                  <span>на любой вкус</span>
-                </div>
-              </a>
-            </div>  
-            <div class="catalog-col s-4">
-              <a href="#">
-                <div class="catalog-col-item color-blue">
-                  Инструмент
-                  <span>на все случаи</span>
-                </div>
-               </a> 
-            </div>  
-            <div class="catalog-col s-4">
-              <a href="#">
-                <div class="catalog-col-item color-purple">
-                  Техника
-                  <span>для стройки</span>
-                </div>
-              </a> 
-            </div>  
-          </div>
-          
-          <div class="catalog-row">
-            <div class="catalog-col s-8">
-              <div class="catalog-col-slider">
-                <h2>перфораторы</h2>
-                <span>Настоящие мужские игрушки</span>
-                <a href="#">Открыть каталог</a>
-              </div>
-            </div>  
-            <div class="catalog-col s-4">
-              <a href="#">
-                <div class="catalog-col-item color-green">
-                  Скидки 50%
-                  <span>на 350 товаров</span>
-                </div>
-              </a>
-              <a href="#">
-                <div class="catalog-col-item color-yellow">
-                  Доставка
-                  <span>бесплатно</span>
-                </div>
-              </a> 
-            </div>    
-          </div>
+        <div class="service-name technics">
+          <h3 class="service-title">Техника</h3>
+					<a class="service-description">Для стройки</a>
         </div>
-      </div>  
+				<div class="service-name tool">
+					<h3 class="service-title">Инструмент</h3>
+					<a class="service-description">На все случаи</a>
+        </div>
+        <div class="service-name new materials">
+          <h3 class="service-title">Материалы</h3>
+					<a class="service-description">На любой вкус</a>
+        </div>
+        <div class="slider">
+          <input id="drill" name="instrument" type="radio" checked>
+          <input id="perforator" name="instrument" type="radio">
+          <div class="slider-controls-buttons">
+            <label for="drill"></label>
+            <label for="perforator"></label>
+          </div>
+				  <div class="slider-controls-arrows">
+						<label for="drill" class="slider-prev"></label>
+						<label for="perforator" class="slider-next"></label>
+          </div>
+					<div class="slides clearfix">
+            <div class="slide drill">
+							<div class="slide-text">
+								<h4 class="slide-title">Дрели</h4>
+								<p>Соседям на радость!</p>
+								<a href="#" class="btn open-catalog">Открыть каталог</a>
+							</div>
+						</div>
+						<div class="slide perforator">
+							<div class="slide-text">
+								<h4 class="slide-title">Перфораторы</h4>
+								<p>Настоящие мужские игрушки</p>
+								<a href="#" class="btn open-catalog">Открыть каталог</a>
+							</div>
+						</div>
+					</div>
+        </div>
+        <div class="service-name sale">
+					<h3 class="service-title">Скидки 50%</h3>
+					<a class="service-description">На 350 товаров</a>
+        </div>
+        <div class="service-name delivery">
+          <h3 class="service-title">Доставка</h3>
+          <a class="service-description">Бесплатно</a>
+        </div>
+      </div>     
 
       <!--Конец модульной верстки-->
       <div class="goods wrapper">
