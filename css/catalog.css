@@ -1,0 +1,61 @@
+/*стили внутренней страницы*/
+.breadcrumbs>ul>li{
+  display:inline-block;
+  vertical-align:top;
+  list-style:none; 
+}
+.breadcrumbs>ul>li::after {
+  content:" > "
+}  
+.head-catalog {
+  display: block;
+  height: 30px;
+  margin: 0;
+  padding: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  background-color:#f2f6f8;
+}
+
+.goods-filter {
+  float:left;
+  width:220px;
+}
+
+.goods-page {
+  float:right;
+  width:700px;
+}
+.gps-select-menu{
+  display:inline-block;
+  vertical-align:top;
+}
+.gps-select-menu>li{
+  display:inline-block;
+  vertical-align:top;
+  list-style:none; 
+}
+
+.goods-paginator>ul>li {
+  display:inline-block;
+  vertical-align:top;
+  list-style:none; 
+}
+
+.about-goods {
+  background-color: #f2f6f8;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  line-height: 24px;
+}
+
+.about-goods h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.about-goods p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}

@@ -1,0 +1,199 @@
+/*стили доставка и прочее*/
+
+.wrapper-color-services{
+  
+  background-color: #f2f6f8;
+}
+.services {
+  height: 524px;
+}
+.services-head {
+  padding: 65px 0;
+ 
+}
+.services-head>h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.services-head>span {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.services-slider {
+  padding: 10px 0;
+
+}
+.services-slider-menu {
+  float: left;
+  width: 240px;
+  
+  background-color: red;
+}
+
+.services-slider-menu ul {
+  margin: 0;
+  padding: 0;
+  /*box-shadow: inset 5px 0 0 0 #000000;*/
+}
+
+.services-slider-menu li{
+  width: 240px;
+  height: 62px;  
+
+  background-color: #32425c;
+  list-style:none;
+  
+}
+
+.services-slider-menu li>a {
+  display: block;
+  margin: 0;
+  padding: 0; 
+  padding: 16px 23px;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;  
+}
+
+.services-slider-menu li>a:hover {
+  background-color: #293449;
+}
+
+.services-slider-menu li>a:active {
+  background-color: #ffffff;
+  color: #293449;
+}
+
+.services-slider-content {
+  float: right;
+  width: 620px;
+  height: 280px;
+
+}
+
+.ss-content>h2{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+.ss-content{
+  display: inline-block;
+  width: 276px;
+}
+.ss-content>span {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+.services-slider-content {
+  
+ /* width: 468px;
+  height: 261px;*/
+  background-image: url("../img/index-delivery.png");
+  background-repeat: no-repeat;
+  background-position:  bottom right;
+}
+/*-----------------------*/
+.about {
+  height: 538px;  
+}
+.about-company{
+  float: left;
+  width: 540px;
+  margin: 80px 0;
+}
+
+.about-company>h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.about-company>p{
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  
+}
+
+.about-company>ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 28px;
+  margin-bottom: 40px;
+  line-height: 30px;
+  font-weight: bold;
+  list-style: none;
+}
+.about-company>ul>li {
+  padding-left: 35px;
+  
+  
+}
+
+.about-company li::before {
+    content: "";
+    width: 25px;
+    border-bottom: 2px #fb565a solid;
+    position: absolute;
+    left: 0;
+    top: 8px;
+} 
+/*---------------------------*/
+.about-contacts{
+  float: right;
+  width: 300px;
+  margin: 80px 0;
+}
+.about-contacts>h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 24px;
+}
+.about-contacts>p {
+  margin: 0;
+  padding: 0;
+}
+.about-contacts>img {
+  margin: 40px 0;
+}
+
+.ac-but {
+  height: 38px;
+  padding: 10px 40px;
+  
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
+.contact-but {
+  width: 180px;
+  padding: 10px 60px;
+}
+
+
+
+

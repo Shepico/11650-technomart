@@ -1,0 +1,292 @@
+/* Стили шапки страниц*/
+
+/*шапка*/
+header {
+  /* width: 940px;
+  
+  padding: 0 130px;
+ margin-bottom: 60px;*/
+  padding-bottom: 60px;
+  
+  background-color: #f1f5f7;  
+  color: #ffffff;
+}
+.wrapper-info-user{
+  height: 42px; 
+  background-color: #293449;    
+}
+.info-user {
+      
+  /*padding: 0 130px; */
+}
+
+.logo {
+  width: 220px;
+  height: 42px;
+    
+  margin:0;
+  /*padding: 9px 0;*/
+  
+  
+  /*text-align: center;*/
+  
+  
+  background-color: #ee3643;
+  
+  box-shadow: 0px 5px 0px 0px #b52933;    
+}
+
+.logo>a {
+  display: block;
+  height: 100%;
+  
+  padding-top: 9px;
+  padding-bottom: 9px;
+  
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  
+  
+  color: #ffffff;
+  
+}
+
+[class*="iu-"] {
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  
+  margin-left: -0.25em;
+
+  padding-top: 12px;
+  padding-bottom: 11px;
+  /*pading-left: 10px*/
+  
+  color: #ffffff; 
+}
+
+[class*="iu-"]>a {
+  display: inline-block;
+  
+  text-decoration: none;
+  
+  margin: 0;
+  padding: 0;
+  
+  color: #ffffff; 
+}
+
+[class*="iu-"]:hover>[class*="icon-"] {
+  opacity: 1;
+}
+
+.iu-search {
+  width: 250px;  
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.iu-search>a>input {
+  width: 100px;
+  display:none;
+  
+  border: none; 
+}
+.iu-search:active{
+  background-color: #ffffff;
+}
+
+.iu-search:active>a>label{
+  display: none;
+}
+
+.iu-search:active>.icon-search{
+  color: #ee3643;
+}
+
+.iu-search:active>a>input{
+  display: inline-block;
+}
+
+.iu-marker:active {
+  opacity: 0.6;
+} 
+
+.iu-basket:active {
+  opacity: 0.6;
+} 
+
+.iu-checkout {
+  /*height: 40px;*/
+  
+  text-align: center;
+  
+  background-color: #63a63e;
+ }
+ 
+ /*.iu-checkout>a {
+  display: inline-block;
+  height: 100%;
+  
+  padding-left: 0;  
+  
+  text-align: center;
+}*/
+
+.iu-checkout:hover {
+  background-color: #5fbb2d; 
+}
+
+.iu-checkout:active {
+  opacity: 0.5;
+}
+.info {
+  height: 68px;
+  margin: 45px 0;
+}
+
+.info-shop {
+  float:left;
+  width:250px;
+  padding-left: 50px;
+  /*padding-right: 10px;*/
+  font-style:italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee4f5b;
+
+}
+
+.info-contacts {
+  float:left;
+  width:300px;
+  margin-left: 20px;
+  text-align: center;
+
+ 
+}
+.info-contacts-tel {
+  height:30px;
+  margin-bottom: 10px;
+  padding-top: 10px; 
+  
+  border: 3px solid #ffffff;
+}
+.icon-phone {
+  display: inline-block;
+  padding-left: 10px;
+  text-align: left;
+  color: #000000;
+}
+
+.info-contacts-tel>span{
+  display: inline-block;
+  font-size: 21px;
+  line-height: 18px;
+  color: #e9292a;
+}
+
+.info-contacts-address {
+  font-size: 14px;
+  color: #293449;
+}
+
+.info-login {
+  float:right;
+  width: 300px;
+  margin-left: 20px;  
+
+}
+
+[class*="info-login-"]{
+  display:block;
+  height: 30px;
+  padding-top: 16px;
+  
+  font-size: 21px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;  
+  
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.info-login-enter {
+  float: left;
+  width: 120px;
+  margin-left: 20px;
+}
+
+.info-login-checkin {
+  float: right;
+  width: 150px;  
+  margin-left: 10px;
+}
+
+[class*="info-login-"]:hover{
+  color: #e9292a;
+  opacity: 1;
+}
+
+[class*="info-login-"]:hover>i{
+  color: #293449;
+  opacity: 1;
+}
+
+[class*="info-login-"]:active{
+  color: #c5c5c5;
+}
+
+[class*="info-login-"]:active>i{
+  color: #c5c5c5;
+}
+
+.user-panel {
+  display:none;
+}
+
+nav {
+  height: 55px;
+  
+  background-color: #32425c;
+  box-shadow:0 5px 0 0 #293449;
+  
+}
+.info-top-menu {
+  display: block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+} 
+
+.info-top-menu>li {
+  display:inline-block;
+  margin-left: -0.25em;
+  list-style:none;
+}
+
+.info-top-menu>li:first-child {
+  margin-left: 0;  
+}
+
+.info-top-menu>li>a {
+  display:block;
+  padding: 19px 33px;
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
+.info-top-menu>li>a:hover {
+  background-color: #293449;
+}  
+
+.info-top-menu>li>a:active {
+  opacity: 0.5;
+  background-color: #293449;
+}  
+
