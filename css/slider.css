@@ -1,242 +1,236 @@
-	.wrapper-catalog {
-    height: 410px;
-		padding: 55px 0;
-		color: #ffffff;
-	}
-  
-  .service-name {
-    position: relative;
-    float: right;
-    width: 275px;
-		height: 76px;
-    margin: 0 0 20px 20px;
-    padding: 25px 0 22px 25px; 
-    
-    
-    
-  }
-  .service-title {
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: bold;
+/*общие классы слайдера*/
+.catalog-services {
+padding: 55px 0;    
 }
- .service-description {
-    display: inline-block;
-    width: 135px;
-    margin: 15px 0 0;
-    padding: 10px 0;
-    background: rgba(229, 229, 229, 0.1);
-    border-radius: 3px;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    /*font: 14px/2.71 "Cuprum", sans-serif;*/
-    text-transform: uppercase;
-    text-align: center;
+.service-name {
+position: relative;
+float: right;
+width: 275px;
+height: 76px;
+margin: 0 0 20px 20px;
+padding: 25px 0 22px 25px;    
+}
+.service-title {
+margin: 0;
+padding: 0;
+font-size: 24px;
+line-height: 30px;
+font-weight: bold;
+color: #ffffff;
+
+}
+.service-description {
+display: inline-block;
+width: 135px;
+margin: 15px 0 0;
+padding: 10px 0;
+
+font-size: 14px;
+line-height: 18px;
+font-weight: bold;
+text-transform: uppercase;
+text-align: center;
+
+background: rgba(178, 178, 178, 0.3);
+color: #ffffff;
+border-radius: 3px;  
 }
 .service-description:hover {
-  background: rgba(204, 204, 204, 0.2);
+background: rgba(178, 178, 178, 0.5);
 } 
 .service-description:active {
-  background: rgba(178, 178, 178, 0.3);
+background: rgba(178, 178, 178, 0.7);
 } 
- /*       .new::after {
-            content: "";
-            position: absolute;
-            width: 60px;
-            height: 59px;
-            top: 0;
-            right: 0;
-            background: url(img/icon-image.png) no-repeat -210px 0;
-            z-index: 1000;
-        }
-        .sellers-item.new::after {
-            top: -1px;
-            right: -1px;
-        }
-            .service-name::before {
-                content: "";
-                margin: -31px 0 0;
-                position: absolute;
-                right: 30px;
-                top: 50%;
-                background: url("img/service-name-image.png") no-repeat;
-            }*/
+
+/*Отдельные блоки. Строим сетку*/ 
 .service-name.materials {
-  background-color: #f6b22d;
-  background-image: url("../img/index-pail.png");
-  background-repeat: no-repeat;
-  background-position: 80% center;
-  margin-left: 0;
+margin-left: 0;
+background-color: #f6b22d;
+background-image: url("../img/index-pail.png");
+background-repeat: no-repeat;
+background-position: 80% center;
+
 }
 
 .service-name.tool {
-  background: #4aafde; 
-   background-image: url("../img/index-drill.png");
-  background-repeat: no-repeat;
-  background-position: 80% center;
- }
- 
+background-color: #4aafde; 
+background-image: url("../img/index-drill.png");
+background-repeat: no-repeat;
+background-position: 80% center;
+}
+
 .service-name.technics { 
-  background: #cc79d1;
- background-image: url("../img/index-tractor.png");
-  background-repeat: no-repeat;
-  background-position: 80% center;  
+background-color: #cc79d1;
+background-image: url("../img/index-tractor.png");
+background-repeat: no-repeat;
+background-position: 80% center;  
 }
 
 .slider {
-  width: 620px;
-	height: 266px;
-	float: left;
-	position: relative;
-  overflow: hidden;
+position: relative;
+float: left;
+overflow: hidden;
+width: 620px;
+height: 266px; 
 }
 
 .service-name.sale {
-  background: #85d179; 
-   background-image: url("../img/index-basket.png");
-  background-repeat: no-repeat;
-  background-position: 80% center;
- }
- 
- .service-name.delivery {
-   background: #f6b22d;
-  background-image: url("../img/index-auto.png");
-  background-repeat: no-repeat;
-  background-position: 80% center;   
- }
-            /*.service-name.technics::before {
-                height: 62px;
-                width: 78px;
-                background-position: -121px 0;
-            }
-            
-            .service-name.tool::before {
-                height: 61px;
-                width: 75px;
-                background-position: -45px 0;
-            }
-   
-            .service-name.materials::before {
-                height: 65px;
-                width: 44px;
-            }	
+background-color: #85d179; 
+background-image: url("../img/index-basket.png");
+background-repeat: no-repeat;
+background-position: 80% center;
+}
 
-            .service-name.sale::before {
-                height: 72px;
-                width: 59px;
-                background-position: -200px 0;
-            }	
-            
-            .service-name.delivery::before {
-                height: 63px;
-                width: 78px;
-                background-position: -260px 0;
-            }	
-		
-            .slider input { display: none; }
-			.slider-controls-buttons {
-                width: 160px;
-				height: 10px;
-                margin: 0 0 0 -80px;
-				position: absolute;
-				bottom: 36px;
-				left: 50%;
-				z-index: 1000;
-				text-align: center;
-                font-size: 0;
-			}
-            .slider-controls-buttons label {
-                display: inline-block;
-                width: 6px;
-                height: 6px;
-                margin: 0 5px;
-                background: #fff;
-                border: 2px solid #fff;
-                border-radius: 50%;
-                vertical-align: top;
-                cursor: pointer;
-            }
-            .slider #drill:checked~.slider-controls-buttons label[for="drill"], 
-            .slider #perforator:checked~.slider-controls-buttons label[for="perforator"] { background: #ee3643; }
-            .slider #perforator:checked~.slides { left: -620px; }
-            .slider #drill:checked~.slides { left: 0; }
-            .slider #drill:checked~.slider-controls-arrows label[for="drill"]::after,
-            .slider #perforator:checked~.slider-controls-arrows label[for="perforator"]::after { 
-                opacity: 0;
-                cursor: default;
-            }
-            .slider-controls-arrows {
-                height: 100%;
-                position: relative;
-            }
-				.slider-prev::after, 
-                .slider-next::after {
-                    display: block;
-                    content: "";
-                    height: 25px;
-					width: 25px;
-                    margin: -15px 0 0;
-                    border-right: 5px solid #fff;
-                    border-bottom: 5px solid #fff;
-                    border-radius: 5px;
-					position: absolute;
-					right: 27px;
-					top: 50%;
-                    z-index: 1000;
-                    -moz-transform: rotate(-45deg);
-                    -ms-transform: rotate(-45deg);
-                    -webkit-transform: rotate(-45deg);
-                    -o-transform: rotate(-45deg);
-                    transform: rotate(-45deg);
-                    cursor: pointer;
-				}
-				.slider-prev::after {
-                    -moz-transform: rotate(135deg);
-                    -ms-transform: rotate(135deg);
-                    -webkit-transform: rotate(135deg);
-                    -o-transform: rotate(135deg);
-                    transform: rotate(135deg);
-                    left: 27px;
-				}
-                .slider-prev:hover::after, 
-                .slider-next:hover::after { box-shadow: 2px 2px 2px 0 #fff; }
-                .slider-prev:active::after, 
-                .slider-next:active::after { 
-                    border-color: #ee3643;
-                    box-shadow: 2px 2px 2px 0 #ee3643;
-                }
-                .slides {
-                    width: 200%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                }
-                .slide {
-                    float: left;
-                    height: 100%;
-                    width: 620px;
-                    position: relative;
-                }
-                .perforator {
-                    background: url("pic-content/slider-slaid-1.png") no-repeat;
-                }
-                .drill {
-                    background: url("pic-content/slider-slaid-2.png") no-repeat;
-                }
-                .slide-text {
-                    width: 260px;
-                    padding: 15px 24px;
-                    color: #fff;
-                }
-                .slide-title {
-                    font: bold 36px/1.1 "Cuprum", sans-serif;
-                    text-transform: uppercase;
-                }
-                .slide-text p {
-                    font: 18px/1.33 "Open Sans", sans-serif;
-                }
-	
+.service-name.delivery {
+background-color: #f6b22d;
+background-image: url("../img/index-auto.png");
+background-repeat: no-repeat;
+background-position: 80% center;   
+}
+/*==Слайдер большой================*/
+.slider-controls-buttons {
+position: absolute;
+bottom: 36px;
+left: 50%;
+z-index: 1000;
+width: 160px;
+height: 10px;
+margin: 0 0 0 -80px;
+font-size: 0;
+text-align: center;
+}
+
+.slider-controls-buttons label {
+display: inline-block;
+width: 6px;
+height: 6px;
+margin: 0 5px;
+vertical-align: top;
+background-color: #ffffff;
+border: 2px solid #ffffff;
+border-radius: 50%;
+
+cursor: pointer;
+}                
+/*стрелки рисуем*/
+.slider-controls-arrows {
+position: relative;
+height: 100%;
+}            
+.slider-prev::after, 
+.slider-next::after {
+position: absolute;
+right: 27px;
+top: 50%;
+z-index: 1000;
+display: block;
+
+width: 25px;
+height: 25px;
+
+margin: -15px 0 0;
+border-right: 5px solid #fff;
+border-bottom: 5px solid #fff;
+border-radius: 5px;
+transform: rotate(-45deg);
+cursor: pointer;
+content: "";
+}
+
+.slider-prev::after {
+transform: rotate(135deg);
+left: 27px;
+}
+
+/*=====================================*/ 
+.slides {
+position: absolute;
+top: 0;
+left: 0;
+width: 200%;
+height: 100%;
+}
+
+.slide {
+position: relative; 
+float: left;
+width: 620px;
+height: 100%;
+}
+.slide-text {
+width: 260px;
+padding: 15px 24px;
+color: #ffffff;
+}
+
+.slide-title {
+margin: 0;
+padding: 0;
+font-size: 36px;
+line-height: 30px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+
+.slide-text p {
+font-family: "PT Sans", "Tahoma", sans-serif;
+font-size: 18px;
+line-height: 24px;  
+}
+
+.drill {
+background: url("../img/sl_drill.jpg") no-repeat;
+}
+
+.perforator {
+background: url("../img/sl_perforator.jpg") no-repeat;
+}
+
+/*=====кнопка===========*/
+.open-catalog {
+position: absolute;
+bottom: 22px;
+left: 25px;
+float: right;
+width: 195px;
+padding: 12px 0;
+
+font-size: 14px;
+text-decoration: none;
+text-transform: uppercase;
+text-align: center;
+
+background-color: #ee3643;
+color: #ffffff;
+border-radius: 3px; 
+
+cursor: pointer;
+}
+
+.open-catalog:hover {
+background-color: #ca2c37;
+}
+.open-catalog:active {
+background-color: #ba2732;
+}
+
+/*Не понятно что делает, но работает*/            
+.slider #drill:checked~.slider-controls-buttons label[for="drill"], 
+.slider #perforator:checked~.slider-controls-buttons label[for="perforator"] { 
+background: #ee3643; 
+}
+
+.slider #perforator:checked~.slides { 
+left: -620px; 
+}
+
+.slider #drill:checked~.slides { 
+left: 0;
+}
+/*скрываем не нужную стрелку слево или справа*/            
+.slider #drill:checked~.slider-controls-arrows label[for="drill"]::after,
+.slider #perforator:checked~.slider-controls-arrows label[for="perforator"]::after { 
+opacity: 0;
+cursor: default;
+}
