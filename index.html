@@ -2,159 +2,164 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <!---шрифты-->
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> <!--PT Sans-->
+    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'> <!--cuprum-->
+    <!--css-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <!--<link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="css/header.css">    
-    <link rel="stylesheet" href="css/item.css">
-    <link rel="stylesheet" href="css/top-catalog.css">
-    <link rel="stylesheet" href="css/delivery.css">
-    <link rel="stylesheet" href="css/footer.css">-->
+    
     <title>Техномарт</title>
   </head>
   <body>
     <header>
-     
-        <div class="wrapper-info-user">
-          <div class="info-user wrapper">
-            <h1 class="logo inl-block">
-              <a href="index.html">ТЕХНОМАРТ</a>
-            </h1>
-            <div class="iu-search inl-block">
-              <i class="icon-search"></i>
-              <form class="search-form" action="#" method="post">
-                <label for="in-search">Поиск:</label>    
-                <input type="text" id="in-search" name="in-search">   
-              </form>  
-            </div>
-            <div class="iu-marker inl-block">
-              <i class="icon-bookmark"></i>
-              <a href="#"> Закладки: 0 </a>            
-            </div>
-            <div class="iu-basket inl-block">
-              <i class="icon-basket"></i>
-              <a href="#"> Корзина: 0 </a>            
-            </div>
-            <div class="iu-checkout inl-block">
-              <a href="#">Оформить заказ</a>            
-            </div>
-          
+      <div  class="status-panel-container">
+        <div class="wrapper">
+          <h1 class="logo">
+            <!-- inl-block - таких классов не создаем. На практике такие случаи бывают, но в большинстве случаем это относится к float элементам. Удаляем его, а стили задаем самим блокам через конкретный класс -->
+            <a href="index.html">ТЕХНОМАРТ</a>
+          </h1>
+          <div class="iu-search">
+            <i class="icon-search"></i>
+            <form class="search-form" action="#" method="post">
+              <label for="in-search">Поиск:</label>    
+              <input type="text" id="in-search" name="in-search">   
+            </form>  
           </div>
-        </div>
-      <div class="wrapper"> 
-        <div class="info clearfix">
-          <div class="info-shop">
-            Интернет-магазин <br> 
-            строительных материалов <br>
-            и инструментов для ремонта          
+          <div class="iu-marker">
+            <i class="icon-bookmark"></i>
+            <a href="#"> Закладки: 0 </a>            
           </div>
-          <div class="info-contacts">
-            <div class="info-contacts-tel">
-              <div class="icon-phone"></div>
-              <span>+7 (812) 555-05-55</span>
-            </div>
-            <div class="info-contacts-address">
-              <span>г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
-            </div>
-          </div>      
-          <div class="info-login clearfix">
-            <a class="info-login-enter" href="#">
-              <i class="icon-login"></i>
-                Войти
-              </a>
-            <a class="info-login-checkin" href="#">Регистрация</a>
-           
-            <div class="user-panel">
-              <p class="account-menu-user-panel">Равшан Джамшутович<a href="#" class="account-menu-exit"></a></p>
-                <div class="account-menu-user-links">
-                  <a href="#">Мои заказы</a>
-                  <span class="point"></span>
-                  <a href="#">Личный кабинет</a>
-                </div>
-            </div>
+          <div class="iu-basket">
+            <i class="icon-basket"></i>
+            <a href="#"> Корзина: 0 </a>            
           </div>
-        </div>  
-        <nav>
-          <ul class="info-top-menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>            
-          </ul>
-        </nav> 
-      </div>    
-    </header>
-    <main>
-      <!--Модульная верстка-->
-      <div class="wrapper-catalog wrapper">
-        <!--Слайдер-->  
-    <div class="catalog-services clearfix">
-      <div class="service-name technics">
-        <h3 class="service-title">Техника</h3>
-				<a class="service-description">Для стройки</a>
-      </div>
-			
-      <div class="service-name tool">
-        <h3 class="service-title">Инструмент</h3>
-        <a class="service-description">На все случаи</a>
-      </div>
-      
-      <div class="service-name new materials">
-				<h3 class="service-title">Материалы</h3>
-				<a class="service-description">На любой вкус</a>
-      </div>
-      
-      <div class="slider">
-        <input id="drill" name="instrument" type="radio" checked>
-        <input id="perforator" name="instrument" type="radio">
-        <div class="slider-controls-buttons">
-					<label for="drill"></label>
-					<label for="perforator"></label>
+          <div class="iu-checkout">
+            <a href="#">Оформить заказ</a>            
+          </div>        
         </div>
-				<div class="slider-controls-arrows">
-          <label for="drill" class="slider-prev"></label>
-					<label for="perforator" class="slider-next"></label>
-        </div>
-        <div class="slides clearfix">
-          <div class="slide drill">
-						<div class="slide-text">
-							<h4 class="slide-title">Дрели</h4>
-							<p>Соседям на радость!</p>
-							<a href="#" class="open-catalog">Открыть каталог</a>
-						</div>
-					</div>
-					<div class="slide perforator">
-						<div class="slide-text">
-							<h4 class="slide-title">Перфораторы</h4>
-							<p>Настоящие мужские игрушки</p>
-							<a href="#" class="open-catalog">Открыть каталог</a>
-            </div>
-					</div>
-				</div>
       </div>
-      
-      <div class="service-name sale">
-				<h3 class="service-title">Скидки 50%</h3>
-				<a class="service-description">На 350 товаров</a>
-      </div>
-      
-      <div class="service-name delivery">
-				<h3 class="service-title">Доставка</h3>
-				<a class="service-description">Бесплатно</a>
-      </div>
-    </div>
-    <!--Слайдер конец-->  
-      </div>     
 
+      <div  class="login-nav-panel-container">
+        <div class="wrapper">
+          <div class="login-panel clearfix">
+            <div class="lp-shop">
+              Интернет-магазин <br> 
+              строительных материалов <br>
+              и инструментов для ремонта          
+            </div>
+            <div class="lp-contacts">
+              <div class="lp-contacts-phone">
+                <div class="icon-phone"></div>
+                <span>+7 (812) 555-05-55</span>
+              </div>
+              <div class="lp-contacts-address">
+                <span>г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
+              </div>
+            </div>      
+            <div class="lp-login clearfix">
+              <a class="lp-login-enter" href="#">
+                <i class="icon-login"></i>
+                  Войти
+                </a>
+              <a class="lp-login-checkin" href="#">Регистрация</a>
+             
+              <div class="lp-login-user-panel">
+                <div class="account-menu-user-panel">Равшан Джамшутович<a href="#" class="account-menu-exit"></a></div>
+                  <div class="account-menu-user-links">
+                    <a href="#">Мои заказы</a>
+                    <span class="point"></span>
+                    <a href="#">Личный кабинет</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <nav>
+            <ul class="nav-top-menu">
+              <li><span>Главная</span></li>
+              <!-- в активном пукте меню заменяем a на span на всех страницах. Так как пункт меню не должен быть ссылкой на самого себя -->
+              <li><a href="#">Компания</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>            
+            </ul>
+          </nav> 
+        </div> 
+      </div>  
+    </header>
+
+    <main>
+
+      <!--Модульная верстка-->
+      <div class="wrapper">
+        <!--Слайдер-->  
+        <div class="catalog-services clearfix">
+          <div class="service-name technics">
+            <h3 class="service-title">Техника</h3>
+    				<a class="service-description">Для стройки</a>
+          </div>
+    			
+          <div class="service-name tool">
+            <h3 class="service-title">Инструмент</h3>
+            <a class="service-description">На все случаи</a>
+          </div>
+          
+          <div class="service-name new materials">
+    				<h3 class="service-title">Материалы</h3>
+    				<a class="service-description">На любой вкус</a>
+          </div>
+          
+          <div class="slider">
+            <input id="drill" name="instrument" type="radio" checked>
+            <input id="perforator" name="instrument" type="radio">
+            <div class="slider-controls-buttons">
+    					<label for="drill"></label>
+    					<label for="perforator"></label>
+            </div>
+    				<div class="slider-controls-arrows">
+              <label for="drill" class="slider-prev"></label>
+    					<label for="perforator" class="slider-next"></label>
+            </div>
+            <div class="slides clearfix">
+              <div class="slide drill">
+    						<div class="slide-text">
+    							<h4 class="slide-title">Дрели</h4>
+    							<p>Соседям на радость!</p>
+    							<a href="#" class="open-catalog">Открыть каталог</a>
+    						</div>
+    					</div>
+    					<div class="slide perforator">
+    						<div class="slide-text">
+    							<h4 class="slide-title">Перфораторы</h4>
+    							<p>Настоящие мужские игрушки</p>
+    							<a href="#" class="open-catalog">Открыть каталог</a>
+                </div>
+    					</div>
+    				</div>
+          </div>
+          
+          <div class="service-name sale">
+    				<h3 class="service-title">Скидки 50%</h3>
+    				<a class="service-description">На 350 товаров</a>
+          </div>
+          
+          <div class="service-name delivery">
+    				<h3 class="service-title">Доставка</h3>
+    				<a class="service-description">Бесплатно</a>
+          </div>
+        </div>
+        <!--Слайдер конец-->  
+      </div>     
       <!--Конец модульной верстки-->
-      <div class="goods wrapper">
-        <h2>
-          Популярные товары
+
+      <div class="popular wrapper">
+        <div class="popular-goods-header clearfix">
+          <h2>Популярные товары:</h2>
           <a href="#">Все популярные товары</a>
-        </h2>
+        </div>  
           <article class="goods-item item">
             <div class="item-actions">
               <a class="item-actions-buy"><i class="icon-basket"></i>купить</a>
@@ -210,137 +215,141 @@
            
       </div>
       <div class="fabricator wrapper">
-        <h2>
-          ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:
-          <a href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
-        </h2>
-        <!--<ul>          
-          <li>-->
+        <div class="popular-fabricator-header clearfix">
+          <h2>Популярные производители:</h2>
+          <a href="#">Все производители</a>
+        </div>
+        
+        <ul class="fabricator-list">          
+          <li>
             <div class="fabricator-item">
               <a href="#">
                   <img src="img/bosch.jpg" alt="БОШ" width="126" height="37">
               </a>
             </div> 
-          <!--</li>
-          <li>-->
+          </li>
+          <li>
             <div class="fabricator-item">
               <a href="#">
                   <img src="img/makita.jpg" alt="Макита" width="123" height="40">
               </a>
             </div> 
-          <!--</li>
-          <li>-->
+          </li>
+          <li>
             <div class="fabricator-item">
               <a href="#">
                   <img src="img/dewalt.jpg" alt="Диволт" width="146" height="44">
               </a>  
             </div>           
-          <!--</li>
-          <li>-->
+          </li>
+          <li>
             <div class="fabricator-item  fabricator-item-last">
               <a href="#">
                 <img src="img/interskol.jpg" alt="Интерскол" width="200" height="88">
               </a>
             </div> 
             
-          <!--</li>
-          <li>-->
+          </li>
+          <li>
             <div class="fabricator-item">
               <a href="#">
                   <img src="img/hitachi.jpg" alt="Хитачи" width="169" height="31">
               </a>
             </div>   
-          <!--</li>
-          <li>-->
+          </li>
+          <li>
             <div class="fabricator-item">
               <a href="#">              
                   <img src="img/lg.jpg" alt="ЛЖ" width="121" height="73">
               </a>
             </div>   
-          <!--</li>
-          <li>-->
+          </li>
+          <li>
             <div class="fabricator-item">
               <a href="#">
                   <img src="img/aeg.jpg" alt="АЕГ" width="151" height="96">
               </a>
             </div>   
-          <!--</li>
-          <li>-->
+          </li>
+          <li>
             <div class="fabricator-item fabricator-item-last">
               <a href="#">
                 <img src="img/metabo.jpg" alt="Метабо" width="204" height="69">
               </a>
             </div>             
-          <!--</li>
-        </ul>-->
+          </li>
+        </ul>
       </div>
-      <div class="wrapper-color-services">
-        <div class="services wrapper">
+      <div class="services-panel">
+        <div class="wrapper">
           <div class="services-head">
             <h2>Сервисы</h2>
-            <span>
+            <p class ="services-content">
               Хороший интернет магазин отличается от плохого не только ценами!<br>
               Мы стараемся изо всеx сил, чтобы сделать ваши покупки приятными.
-            </span>
+            </p>            
           </div>
           <div class="services-slider">
-            <div class="services-slider-menu">
-              <ul>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Гарантия</a></li>
-                <li><a href="#">Кредит</a></li>
-              </ul>
-            </div>
+            
+            <input type="radio" name="services-slider" id="delivery" checked="checked">
+            <label for="delivery">Доставка</label>
             <div class="services-slider-content delivery">
               <div class="ss-content">
                 <h2>Доставка</h2>
-                <span>
+                <p class ="services-content">
                   Мы с удовольствие доставим Ваш товар прямо к вашему подъезду совершенно бесплатно!
                   Ведь мы не плохо заработаем поднимая его на Ваш этаж!
-                </span>  
+                </p>  
               </div>                          
             </div>
             
+            <input type="radio" name="services-slider" id="garanty">
+            <label for="garanty">Гарантия</label>
             <div class="services-slider-content garanty">
               <div class="ss-content">
                 <h2>Гарантия</h2>
-                <span>
+                <p class ="services-content">                  
                   Если купленный у нас товар поломается или заискрит, а так же ы случае пожара,
                   спровоцированного его возгоранием, вы всегда сможете быть уверены в нашей гарантии.
                   Мы обменяем сгоревший товар на новый.<br>
-                  Дом уж восстановите как нибудь сами.
-                </span>  
+                  Дом уж восстановите как-нибудь сами.
+                </p>  
               </div>                          
             </div>
             
+            
+            <input type="radio" name="services-slider" id="credit">
+            <label for="credit">Кредит</label>
             <div class="services-slider-content credit">
               <div class="ss-content">
                 <h2>Кредит</h2>
-                <span>
+                <p class ="services-content">
                   Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
-                </span>  
-                <a class ="ac-but contact-but" href="#">Отправить заявку</a>
+                </p>  
+                <a href="#">Отправить заявку</a>
               </div>                          
-            </div>
-            
+            </div>            
           </div>        
         </div>
       </div>
+      
       <div class="about clearfix wrapper">
         <div class="about-company">
           <h2>Компания "Техномарт"</h2>
-          <p>
+          <p class ="services-content">
             Настоящий мужской шопинг начинается здесь! 
             Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+             <!-- текст почему то курсивом - в макете обычное начертание -->
           </p>  
-          <p>
+          <p class ="services-content">
             Мы можем доставить Ваш товар в самые отдаленные точки России!<br>
-            Техномарт работает со многоми транспортными компаниями.
-          </p>
+            Техномарт работает со многоми транспортными компаниями.             
+          </p class ="services-content">
           <ul>
             <li>Деловые линии</li>
             <li>Автотрединг</li>
             <li>ЖелДорЭкспедиция</li>
+
           </ul>
           <a class="ac-but company-but" href="#">Подробнее о компании</a>
         </div>
@@ -353,11 +362,10 @@
       </div>
     </main>
     <footer>
-      
       <div class="footer-top">
         <div class="wrapper">
           <div class="footer-top-one">
-            <h1 class="logo logo-footer inl-block">
+            <h1 class="logo logo-footer">
               <a href="index.html">ТЕХНОМАРТ</a>
             </h1>
             <ul class="nav-footer-one-menu">
@@ -393,11 +401,7 @@
           <div class="fb-social">
             <div><a href="#"><i class="icon-vk"></i></a></div>
             <div><a href="#"><i class="icon-facebook"></i></a></div>
-            <div><a href="#"><i class="icon-instagramm"></i></a></div>
-            <!--Будет через CSS пока для вида
-            <img src="//placehold.it/40x40" alt="В контакте" width="40" height="40">
-            <img src="//placehold.it/40x40" alt="Фейсбук" width="40" height="40">
-            <img src="//placehold.it/40x40" alt="Инстаграм" width="40" height="40">-->
+            <div><a href="#"><i class="icon-instagramm"></i></a></div>           
           </div>
           <div class="fb-feedback">
             <span>Обратная связь</span><br>

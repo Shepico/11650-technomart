@@ -1,91 +1,97 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+     <!---шрифты-->
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> <!--PT Sans-->
+    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'> <!--cuprum-->
+    <!--css-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">    
-    <!--<link rel="stylesheet" href="css/item.css">-->
+    
     <title>О странице</title>
   </head>
   <body>
-<header>
-     
-        <div class="wrapper-info-user">
-          <div class="info-user wrapper">
-            <h1 class="logo inl-block">
-              <a href="index.html">ТЕХНОМАРТ</a>
-            </h1>
-            <div class="iu-search inl-block">
-              <i class="icon-search"></i>
-              <form class="search-form" action="#" method="post">
-                <label for="in-search">Поиск:</label>    
-                <input type="text" id="in-search" name="in-search">   
-              </form>  
-            </div>
-            <div class="iu-marker inl-block">
-              <i class="icon-bookmark"></i>
-              <a href="#"> Закладки: 0 </a>            
-            </div>
-            <div class="iu-basket inl-block">
-              <i class="icon-basket"></i>
-              <a href="#"> Корзина: 0 </a>            
-            </div>
-            <div class="iu-checkout inl-block">
-              <a href="#">Оформить заказ</a>            
-            </div>
-          
+    <header>
+      <div  class="status-panel-container">
+        <div class="wrapper">
+          <h1 class="logo">
+            <a href="index.html">ТЕХНОМАРТ</a>
+          </h1>
+          <div class="iu-search">
+            <i class="icon-search"></i>
+            <form class="search-form" action="#" method="post">
+              <label for="in-search">Поиск:</label>    
+              <input type="text" id="in-search" name="in-search">   
+            </form>  
           </div>
+          <div class="iu-marker">
+            <i class="icon-bookmark"></i>
+            <a href="#"> Закладки: 0 </a>            
+          </div>
+          <div class="iu-basket">
+            <i class="icon-basket"></i>
+            <a href="#"> Корзина: 0 </a>            
+          </div>
+          <div class="iu-checkout">
+            <a href="#">Оформить заказ</a>            
+          </div>        
         </div>
-      <div class="wrapper"> 
-        <div class="info clearfix">
-          <div class="info-shop">
-            Интернет-магазин <br> 
-            строительных материалов <br>
-            и инструментов для ремонта          
+      </div>
+
+      <div  class="login-nav-panel-container">
+        <div class="wrapper">
+          <div class="login-panel clearfix">
+            <div class="lp-shop">
+              Интернет-магазин <br> 
+              строительных материалов <br>
+              и инструментов для ремонта          
+            </div>
+            <div class="lp-contacts">
+              <div class="lp-contacts-phone">
+                <div class="icon-phone"></div>
+                <span>+7 (812) 555-05-55</span>
+              </div>
+              <div class="lp-contacts-address">
+                <span>г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
+              </div>
+            </div>      
+            <div class="lp-login clearfix">
+              <a class="lp-login-enter" href="#">
+                <i class="icon-login"></i>
+                  Войти
+                </a>
+              <a class="lp-login-checkin" href="#">Регистрация</a>
+             
+              <div class="lp-login-user-panel">
+                <div class="account-menu-user-panel">Равшан Джамшутович<a href="#" class="account-menu-exit"></a></div>
+                  <div class="account-menu-user-links">
+                    <a href="#">Мои заказы</a>
+                    <span class="point"></span>
+                    <a href="#">Личный кабинет</a>
+                  </div>
+              </div>
+            </div>
           </div>
-          <div class="info-contacts">
-            <div class="info-contacts-tel">
-              <div class="icon-phone"></div>
-              <span>+7 (812) 555-05-55</span>
-            </div>
-            <div class="info-contacts-address">
-              <span>г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
-            </div>
-          </div>      
-          <div class="info-login clearfix">
-            <a class="info-login-enter" href="#">
-              <i class="icon-login"></i>
-                Войти
-              </a>
-            <a class="info-login-checkin" href="#">Регистрация</a>
-           
-            <div class="user-panel">
-              <p class="account-menu-user-panel">Равшан Джамшутович<a href="#" class="account-menu-exit"></a></p>
-                <div class="account-menu-user-links">
-                  <a href="#">Мои заказы</a>
-                  <span class="point"></span>
-                  <a href="#">Личный кабинет</a>
-                </div>
-            </div>
-          </div>
-        </div>  
-        <nav>
-          <ul class="info-top-menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>            
-          </ul>
-        </nav> 
-      </div>    
+          
+          <nav>
+            <ul class="nav-top-menu">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Компания</a></li>
+              <li><span>Каталог</span></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>            
+            </ul>
+          </nav> 
+        </div> 
+      </div>  
     </header>
     <div class="wrapper">
       <div class="breadcrumbs">
         <ul>
-          <li><a href="#"><i class="icon-home"></i></a></li>
+          <li><a href="index.html"><i class="icon-home"></i></a></li>
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
           <li>Перфораторы</li> 
@@ -291,7 +297,7 @@
       <div class="about-goods">
         <div class="wrapper ">
           <h2>Пара слов о перфораторах</h2>
-          <p>
+          <p class ="services-content">
             Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
             Существуют электромеханические и пневматические перфораторы. Современный модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
             В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молот и ударная дрель.
@@ -311,7 +317,7 @@
             <ul class="nav-footer-one-menu">
               <li><a href="#">Компания</a></li>
               <li><a href="#">Новости</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
+              <li><span>Каталог</span></li>
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>            
@@ -342,10 +348,6 @@
             <div><a href="#"><i class="icon-vk"></i></a></div>
             <div><a href="#"><i class="icon-facebook"></i></a></div>
             <div><a href="#"><i class="icon-instagramm"></i></a></div>
-            <!--Будет через CSS пока для вида
-            <img src="//placehold.it/40x40" alt="В контакте" width="40" height="40">
-            <img src="//placehold.it/40x40" alt="Фейсбук" width="40" height="40">
-            <img src="//placehold.it/40x40" alt="Инстаграм" width="40" height="40">-->
           </div>
           <div class="fb-feedback">
             <span>Обратная связь</span><br>
