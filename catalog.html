@@ -16,6 +16,7 @@
       <div  class="status-panel-container">
         <div class="wrapper">
           <h1 class="logo">
+            <!-- inl-block - таких классов не создаем. На практике такие случаи бывают, но в большинстве случаем это относится к float элементам. Удаляем его, а стили задаем самим блокам через конкретный класс -->
             <a href="index.html">ТЕХНОМАРТ</a>
           </h1>
           <div class="iu-search">
@@ -49,36 +50,39 @@
             </div>
             <div class="lp-contacts">
               <div class="lp-contacts-phone">
-                <div class="icon-phone"></div>
+                <i class="icon-phone"></i>
                 <span>+7 (812) 555-05-55</span>
               </div>
               <div class="lp-contacts-address">
                 <span>г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
               </div>
             </div>      
-            <div class="lp-login clearfix">
-              <a class="lp-login-enter" href="#">
-                <i class="icon-login"></i>
-                  Войти
-                </a>
-              <a class="lp-login-checkin" href="#">Регистрация</a>
-             
-              <div class="lp-login-user-panel">
-                <div class="account-menu-user-panel">Равшан Джамшутович<a href="#" class="account-menu-exit"></a></div>
-                  <div class="account-menu-user-links">
-                    <a href="#">Мои заказы</a>
-                    <span class="point"></span>
-                    <a href="#">Личный кабинет</a>
-                  </div>
+            <!--Форма логина-->
+            <div class="lp-login">
+              <div class="lp-login-registr clearfix">
+                <div class="lp-login-enter" href="#"><i class="icon-login"></i>Войти</div>
+                <div class="lp-login-checkin" href="#">Регистрация</div>
+              <!--</div>
+              <div class="lp-login-user-panel  not-visible">-->
+                <div class="account-menu-user-panel">
+                  <a href="#" class="account-menu-exit not-visible">
+                  <i class="icon-user"></i>Равшан Джамшутович<i class="icon-logout"></i>
+                  </a>
+                </div>
+                <div class="account-menu-user-links not=visible">
+                  <a href="#">Мои заказы</a>
+                  <span class="point"></span>
+                  <a href="#">Личный кабинет</a>
+                </div>
               </div>
-            </div>
-          </div>
-          
+            </div>          
+          </div>         
           <nav>
             <ul class="nav-top-menu">
-              <li><a href="index.html">Главная</a></li>
+              <li><span>Главная</span></li>
+              <!-- в активном пукте меню заменяем a на span на всех страницах. Так как пункт меню не должен быть ссылкой на самого себя -->
               <li><a href="#">Компания</a></li>
-              <li><span>Каталог</span></li>
+              <li><a href="catalog.html">Каталог</a></li>
               <li><a href="#">Новости</a></li>
               <li><a href="#">Спецпредложения</a></li>
               <li><a href="#">Доставка</a></li>
