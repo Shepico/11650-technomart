@@ -350,17 +350,17 @@ header {
 .lp-login {
   float:right;
   width: 300px;
-  margin-left: 20px;  
-
 }
 
 .lp-login-registr{
-  width: 280px;
+  float: right;
+  max-width: 300px;
   height: 45px;
   margin: 0;
   padding: 0;
   
-}
+
+ }
 
 .lp-login-registr>[class*="lp-login-"]{
   display:block;
@@ -377,6 +377,7 @@ header {
 .lp-login-enter {
   float: left;
   width: 120px; 
+  margin-right: 10px;
   
 }
 
@@ -419,6 +420,8 @@ header {
 .lp-login-enter:active~[class*="account-menu-user-"]{
   display: block;
 }
+
+
 
 /*.lp-login-user-panel {
  /* display:none;
@@ -479,89 +482,6 @@ header {
   opacity: 0.3;
 }
 
-/*======================*/
-/*account-menu
-.account-menu {
-  max-width: 380px;
-  float: right;
-	font-size: 0;
-}
-        .account-menu-registration,
-        .account-menu-enter,
-        .account-menu-user-panel {
-            font: bold 21px/2.14 "Cuprum", sans-serif;
-            color: #000;
-            background: #fff;
-            position: relative;
-        }
-        .account-menu-registration {
-            display: inline-block;
-            margin: 0 0 0 10px;
-            padding: 0 25px;
-        }
-        .account-menu-enter {
-            display: inline-block;
-            padding: 0 30px 0 48px;
-        }
-        .account-menu-enter::before {
-            background-position: -80px 0;
-            left: 18px;
-            opacity: .3;
-        }
-        .account-menu-registration:hover, 
-        .account-menu-enter:hover { color: #ee3643; }
-        .account-menu-enter:hover::before { opacity: 1; }
-        .account-menu-registration:active,
-        .account-menu-enter:active { color: rgba(0, 0, 0, 0.3); }
-        .account-menu-enter:active::before { opacity: .3; }
-			.account-menu-user-panel {
-                display: inline-block;
-				padding: 0 48px;
-                margin: 0 0 5px;
-			}
-            .account-menu-user-panel::before {
-                background-position: -116px 0;
-                left: 18px;
-            }
-            .account-menu-exit {
-                width: 16px;
-                height: 16px;
-                margin: -8px 0 0;
-                background: url("img/icon-image.png") no-repeat;
-                position: absolute;
-                top: 50%;
-                background-position: -97px 0;
-                right: 14px;
-                opacity: .3;
-            }
-            .account-menu-exit:hover { opacity: 1; }
-            .account-menu-exit:active,
-            .account-menu-exit:active+span { opacity: .3; }
-			.account-menu-user-links {
-                padding: 0 0 0 20px;
-			}
-            .account-menu-user-links a {
-                background: none;
-                font: 16px/1.13 "Cuprum", sans-serif;
-                color: #32425c;
-                text-decoration: underline;
-            }
-            .account-menu-user-links a:hover { color: #ee3643; }
-            .account-menu-user-links a:active {
-                color: #32425c;
-                opacity: .3;
-            }
-            .account-menu-user-links .point {
-                margin: 0 15px 2px;
-                background: #32425c;
-            }
-.user-panel-block {
-  display: block;
-}
-           
-.account-no-visible { 
-  display: none; 
-}
 /*-----------------*/
 
 nav {
