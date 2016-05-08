@@ -83,6 +83,8 @@ font-family: 'Cuprum', sans-serif;
 .icon-home::before { content: "\1f3e0"; } /* "\1f3e0" */
 .icon-up-dir::before { content: "\25b2"; } /* "?" */
 .icon-down-dir::before { content: "\25bc"; } /* "?" */
+.icon-user::before { content: "\1f468"; } /* "\1f468" */
+.icon-logout::before { content: "\241b"; } /* "?" */
 
 /*-То что ниже удалить---------------------*/
 .icon-left::before { content: "\3c"; } /* "&lt;" */
@@ -96,7 +98,7 @@ font-family: 'Cuprum', sans-serif;
 .icon-left-big::before { content: "\2190"; } /* "?" */
 .icon-right-big::before { content: "\2192"; } /* "?" */
 
-.icon-logout::before { content: "\241b"; } /* "?" */
+
 
 .icon-circle::before { content: "\25cb"; } /* "?" */
 .icon-circle-dot::before { content: "\25cf"; } /* "?" */
@@ -105,11 +107,17 @@ font-family: 'Cuprum', sans-serif;
 .icon-check-on::before { content: "\2611"; } /* "?" */
 .icon-youtube::before { content: "\f39e"; } /* "?" */
 
-.icon-user::before { content: "??"; } /* "\1f468" */
+
 
 
 
 /*вспомогательные классы*/
+/*чтобы картинки не уходили за границы*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .wrapper{
   width: 940px;
   
@@ -138,13 +146,19 @@ font-family: 'Cuprum', sans-serif;
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 5;
   
   width: 60px;
   height: 59px;
   background: url(../img/new-flag.png);
   content: ""; 
 }
+
+/*сделать блок не видимым*/
+.not-visible {
+  display: none;
+}
+
 /*===========================================*/
 
 body{
@@ -305,6 +319,7 @@ header {
   text-align: center; 
 }
 .lp-contacts-phone {
+  position: relative;
   height:30px;
   margin-bottom: 10px;
   padding-top: 10px; 
@@ -319,8 +334,10 @@ header {
 }
 
 .icon-phone {
+  position: absolute;
+  left: 10px;
   display: inline-block;
-  padding-left: 10px;
+  /*padding-left: 10px;*/
   text-align: left;
   color: #000000;
 }
@@ -329,7 +346,7 @@ header {
   font-size: 14px;
   color: #293449;
 }
-
+/*============================*/
 .lp-login {
   float:right;
   width: 300px;
@@ -337,15 +354,21 @@ header {
 
 }
 
-[class*="lp-login-"]{
+.lp-login-registr{
+  width: 280px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.lp-login-registr>[class*="lp-login-"]{
   display:block;
-  height: 30px;
-  padding-top: 16px;
   
   font-size: 21px;
-  line-height: 18px;
+  line-height: 45px;
   text-align: center;
-  text-decoration: none;  
+  text-decoration: none; 
   
   background-color: #ffffff;
   color: #000000;
@@ -353,14 +376,15 @@ header {
 
 .lp-login-enter {
   float: left;
-  width: 120px;
-  margin-left: 20px;
+  width: 120px; 
+  
 }
 
 .lp-login-checkin {
   float: right;
   width: 150px;  
-  margin-left: 10px;
+  /*margin-left: 10px;*/
+  background-color: green;
 }
 
 [class*="lp-login-"]:hover{
@@ -380,10 +404,152 @@ header {
 [class*="lp-login-"]:active>i{
   color: #c5c5c5;
 }
-
-.lp-login-user-panel {
-  display:none;
+/*.lp-login-enter:hover .lp-login-user-panel {
+  display: block;
 }
+.lp-login-user-panel {
+ /* display:none;
+}*/
+
+.account-menu-user-panel {
+  width: 300px;
+  height: 45px;  
+  text-align: center;
+  background-color: #ffffff;
+  
+}
+
+.account-menu-exit {
+  display: inline-block;
+  margin: auto;  
+  font-size: 21px;
+  line-height: 45px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.icon-user {
+  margin-right: 15px;
+}
+
+.icon-logout {
+  margin-left: 25px;
+}
+
+.point {
+  display: inline-block;
+  height: 4px;
+  width: 4px;
+  margin: 0;
+  margin-left: 18px;
+  background: #32425c;
+  border-radius: 50%;
+}
+
+.account-menu-exit:active{
+  opacity: 0.3;
+}
+.account-menu-user-links>a {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.account-menu-user-links>a:hover {
+  color: #ee3643;
+}
+
+.account-menu-user-links>a:active {
+  color: #32425c;
+  opacity: 0.3;
+}
+
+/*======================*/
+/*account-menu
+.account-menu {
+  max-width: 380px;
+  float: right;
+	font-size: 0;
+}
+        .account-menu-registration,
+        .account-menu-enter,
+        .account-menu-user-panel {
+            font: bold 21px/2.14 "Cuprum", sans-serif;
+            color: #000;
+            background: #fff;
+            position: relative;
+        }
+        .account-menu-registration {
+            display: inline-block;
+            margin: 0 0 0 10px;
+            padding: 0 25px;
+        }
+        .account-menu-enter {
+            display: inline-block;
+            padding: 0 30px 0 48px;
+        }
+        .account-menu-enter::before {
+            background-position: -80px 0;
+            left: 18px;
+            opacity: .3;
+        }
+        .account-menu-registration:hover, 
+        .account-menu-enter:hover { color: #ee3643; }
+        .account-menu-enter:hover::before { opacity: 1; }
+        .account-menu-registration:active,
+        .account-menu-enter:active { color: rgba(0, 0, 0, 0.3); }
+        .account-menu-enter:active::before { opacity: .3; }
+			.account-menu-user-panel {
+                display: inline-block;
+				padding: 0 48px;
+                margin: 0 0 5px;
+			}
+            .account-menu-user-panel::before {
+                background-position: -116px 0;
+                left: 18px;
+            }
+            .account-menu-exit {
+                width: 16px;
+                height: 16px;
+                margin: -8px 0 0;
+                background: url("img/icon-image.png") no-repeat;
+                position: absolute;
+                top: 50%;
+                background-position: -97px 0;
+                right: 14px;
+                opacity: .3;
+            }
+            .account-menu-exit:hover { opacity: 1; }
+            .account-menu-exit:active,
+            .account-menu-exit:active+span { opacity: .3; }
+			.account-menu-user-links {
+                padding: 0 0 0 20px;
+			}
+            .account-menu-user-links a {
+                background: none;
+                font: 16px/1.13 "Cuprum", sans-serif;
+                color: #32425c;
+                text-decoration: underline;
+            }
+            .account-menu-user-links a:hover { color: #ee3643; }
+            .account-menu-user-links a:active {
+                color: #32425c;
+                opacity: .3;
+            }
+            .account-menu-user-links .point {
+                margin: 0 15px 2px;
+                background: #32425c;
+            }
+.user-panel-block {
+  display: block;
+}
+           
+.account-no-visible { 
+  display: none; 
+}
+/*-----------------*/
 
 nav {
   height: 55px;  
@@ -525,7 +691,7 @@ background-position: 80% center;
 position: absolute;
 bottom: 36px;
 left: 50%;
-z-index: 1000;
+z-index: 5;
 width: 160px;
 height: 10px;
 margin: 0 0 0 -80px;
@@ -555,7 +721,7 @@ height: 100%;
 position: absolute;
 right: 27px;
 top: 50%;
-z-index: 1000;
+z-index: 5;
 display: block;
 
 width: 25px;
@@ -676,7 +842,7 @@ cursor: default;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;    
+  z-index: 5;    
 }
  .item-actions-buy,
  .item-actions-bookmark {
@@ -1892,3 +2058,162 @@ input[type="submit"]{
   border-radius: 2px;
 }
 /* Конец фильтров */
+
+/*popup*/
+/*карта*/
+.btn-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  
+  width: 25px;
+  height: 25px;
+  
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+}
+.btn-close::after,
+.btn-close::before {
+  position: absolute;
+  top: 11px;
+  right: 2px;
+  width: 22px;
+  height: 4px;
+  background-color: #ee3643;
+  content: "";  
+}
+
+.btn-close::after {
+  transform: rotate(45deg);
+}
+.btn-close::before {
+  transform: rotate(-45deg);
+}
+
+.map-big {
+  position: fixed;
+  bottom: 18%;
+  left: 25%;
+  z-index: 10;
+  width: 940px;
+  height: 446px;
+  height: 446px;
+  background-color: #ffffff;
+  background-image: url("../img/map-big.jpg");
+  box-shadow: 0 0 15px 0 #000000; 
+}
+/*Форма обратной связи*/
+.btn-feedback {
+  top: 8px;
+  right: 8px;
+}
+.feedback {
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  z-index: 10;
+  width: 620px;
+  height: 423px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+  
+}
+.wrapper-feedback {
+  width: 460px;
+  height: 226px;
+  margin: auto;
+  margin-top: 48px;
+  margin-bottom: 38px;
+  border: none;
+}
+
+.button-part {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 112px; 
+  
+  background-color: #f1f1f1;
+}
+
+.btn-submit {
+  position: absolute;
+  top: 38px;
+  left: 80px;
+  width: 460px;
+  height: 38px;
+  margin: auto;
+  font-size: 14px;
+  line-height: 38px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;  
+}
+
+.btn-submit:hover {
+  background-color: #ca2c37;
+}
+
+.btn-submit:action {
+  background-color: #ba2732;
+}
+
+.name-field {
+  float: left;
+  width: 220px;  
+  margin: 0;
+  padding: 0;
+  
+  border: none;  
+}
+
+.email-field {
+  float: right;
+  width: 220px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 22px;
+  border: none;  
+}
+
+.content-field {
+  width: 460px;
+  height: 100px;
+  margin: 0;
+  padding: 0;  
+  border: none;  
+}
+
+.label-fields {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.str-fields {
+  width: 203px;
+  height: 36px;  
+  padding-left: 15px;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  border: 1px solid #d7dcde;
+  border-radius: 2px;  
+}
+
+.content-field-input {
+  width: 458px;
+  height: 115px;
+  margin: 0;
+  padding: 0;
+}

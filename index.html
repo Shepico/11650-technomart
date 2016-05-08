@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <!---шрифты-->
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> <!--PT Sans-->
-    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'> <!--cuprum-->
+    <!--<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> <!--PT Sans-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'> <!--cuprum-->
     <!--css-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -50,22 +50,21 @@
             </div>
             <div class="lp-contacts">
               <div class="lp-contacts-phone">
-                <div class="icon-phone"></div>
+                <i class="icon-phone"></i>
                 <span>+7 (812) 555-05-55</span>
               </div>
               <div class="lp-contacts-address">
                 <span>г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
               </div>
             </div>      
-            <div class="lp-login clearfix">
-              <a class="lp-login-enter" href="#">
-                <i class="icon-login"></i>
-                  Войти
-                </a>
-              <a class="lp-login-checkin" href="#">Регистрация</a>
-             
-              <div class="lp-login-user-panel">
-                <div class="account-menu-user-panel">Равшан Джамшутович<a href="#" class="account-menu-exit"></a></div>
+            <!--Форма логина-->
+            <div class="lp-login">
+              <div class="lp-login-registr clearfix">
+                <a class="lp-login-enter" href="#"><i class="icon-login"></i>Войти</a>
+                <a class="lp-login-checkin" href="#">Регистрация</a>
+              </div>
+              <div class="lp-login-user-panel  not-visible">
+                <div class="account-menu-user-panel"><a href="#" class="account-menu-exit"><i class="icon-user"></i>Равшан Джамшутович<i class="icon-logout"></i></a></div>
                   <div class="account-menu-user-links">
                     <a href="#">Мои заказы</a>
                     <span class="point"></span>
@@ -73,7 +72,23 @@
                   </div>
               </div>
             </div>
+            <!--<div class="account-menu">
+              <div class="enter-registr">
+                <a class="account-menu-enter" href="#">Войти</a>
+                <a class="account-menu-registration" href="#">Регистрация</a>
+              </div>
+              <div class="user-panel-block account-no-visible">
+                  <p class="account-menu-user-panel">Равшан Джамшутович<a href="#" class="account-menu-exit"></a></p>
+                  <div class="account-menu-user-links">
+                    <a href="#">Мои заказы</a>
+                    <span class="point"></span>
+                    <a href="#">Личный кабинет</a>
+                  </div>
+              </div>
+            </div>-->
           </div>
+          
+          
           
           <nav>
             <ul class="nav-top-menu">
@@ -414,5 +429,34 @@
         </div>
       </div>  
     </footer>
+    <!--popup window-->
+    <!--Большая карта-->
+    <!--class невидимого блока not-visible-->
+    <div class="map-big not-visible">
+      <button class="btn-close btn-map" type="button" name="map-big-close">Закрыть</button>
+    </div>
+    <!--Форма обратной связи-->
+    <form method="post" class="feedback not-visible" action="#" name="feedback">
+      <div class="wrapper-feedback clearfix">
+          <fieldset class="name-field">
+            <label class = "label-fields" for="name-field">Ваше имя:</label>
+            <input type="text" class="str-fields name-field-input" id="name-field" placeholder="Представьтесь, пожалуйста"></input>
+          </fieldset>
+          <fieldset class="email-field">
+            <label class = "label-fields" for="email-field">Ваш e-mail:</label>
+            <input type="email" class="str-fields email-field-input" id="email-field" placeholder="Для отправки ответа"></input>
+          </fieldset>
+          <fieldset class="content-field">
+            <label class = "label-fields" for="content-field">Текст письма:</label>
+            <input type="textarea" class="str-fields content-field-input" id="content-field" placeholder="В свободной форме"></input>
+          </fieldset>  
+        
+      </div>
+      <div class="button-part">
+        <button class="btn-submit" type="button" name="submit-feedback">Отправить</button>
+      </div>      
+      <button class="btn-close btn-feedback" type="button" name="map-big-close">Закрыть</button>
+    </form>
+    
   </body>
 </html>
