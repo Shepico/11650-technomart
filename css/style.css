@@ -404,10 +404,23 @@ header {
 [class*="lp-login-"]:active>i{
   color: #c5c5c5;
 }
-/*.lp-login-enter:hover .lp-login-user-panel {
+/*вход пользователя*/
+[class*="account-menu-user-"] {
+  display: none;
+}
+
+.lp-login-enter:active {
+  display: none;
+}
+.lp-login-enter:active+.lp-login-checkin {
+  display: none;
+}
+
+.lp-login-enter:active~[class*="account-menu-user-"]{
   display: block;
 }
-.lp-login-user-panel {
+
+/*.lp-login-user-panel {
  /* display:none;
 }*/
 
