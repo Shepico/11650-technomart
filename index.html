@@ -62,15 +62,15 @@
               <div class="lp-login-registr clearfix">
                 <div class="lp-login-enter" href="#"><i class="icon-login"></i>Войти</div>
                 <div class="lp-login-checkin" href="#">Регистрация</div>
-              <!--</div>
-              <div class="lp-login-user-panel  not-visible">-->
-                <div class="account-menu-user-panel not-visible">
+              </div>
+              <div class="lp-login-user-panel  not-visible">
+                <div class="account-menu-user-panel">
                   <a href="#" class="account-menu-exit">
-                  <i class="icon-user"></i>Равшан Джамшутович<i class="icon-logout"></i>
+                    <i class="icon-user"></i>Равшан Джамшутович<i class="icon-logout"></i>
                   </a>
                 </div>
                
-                <div class="account-menu-user-links not=visible">
+                <div class="account-menu-user-links">
                   <a href="#">Мои заказы</a>
                   <span class="point"></span>
                   <a href="#">Личный кабинет</a>
@@ -359,7 +359,9 @@
         <div class="about-contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать свой товар сами, заехав в наш офис:</p>
-          <img src="img/map.jpg" alt="Карта" width="300" height="158">
+          <a class="open-bigmap" href="#">
+            <img  src="img/map.jpg" alt="Карта" width="300" height="158">
+          </a>  
           <a class="ac-but contact-but" href="#">Заблудились? Напишите нам!</a>
         </div>
       </div>
@@ -421,6 +423,7 @@
     <!--Большая карта-->
     <!--class невидимого блока not-visible-->
     <div class="map-big not-visible">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462792306362" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
       <button class="btn-close btn-map" type="button" name="map-big-close">Закрыть</button>
     </div>
     <!--Форма обратной связи-->
@@ -441,10 +444,11 @@
         
       </div>
       <div class="button-part">
-        <button class="btn-submit" type="button" name="submit-feedback">Отправить</button>
+        <button class="btn-submit" type="submit" name="submit-feedback">Отправить</button>
       </div>      
       <button class="btn-close btn-feedback" type="button" name="map-big-close">Закрыть</button>
     </form>
     
+    <script src="js/script.js"></script>
   </body>
 </html>

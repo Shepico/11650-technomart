@@ -377,15 +377,17 @@ header {
 .lp-login-enter {
   float: left;
   width: 120px; 
-  margin-right: 10px;
+  margin-right: 10px;  
   
+  cursor: pointer;
 }
 
 .lp-login-checkin {
   float: right;
   width: 150px;  
   /*margin-left: 10px;*/
-  background-color: green;
+  
+  cursor: pointer;
 }
 
 [class*="lp-login-"]:hover{
@@ -405,7 +407,7 @@ header {
 [class*="lp-login-"]:active>i{
   color: #c5c5c5;
 }
-/*вход пользователя*/
+/*вход пользователя
 [class*="account-menu-user-"] {
   display: none;
 }
@@ -421,7 +423,7 @@ header {
   display: block;
 }
 
-
+*/
 
 /*.lp-login-user-panel {
  /* display:none;
@@ -461,6 +463,9 @@ header {
   background: #32425c;
   border-radius: 50%;
 }
+.account-menu-exit:hover>i{
+  opacity: 1;
+} 
 
 .account-menu-exit:active{
   opacity: 0.3;
@@ -1282,7 +1287,10 @@ cursor: default;
   margin: 0;
   padding: 0;
 }
-.about-contacts>img {
+
+.open-bigmap {
+  display: block;
+  width: 300px;
   margin: 40px 0;
 }
 
@@ -1301,7 +1309,9 @@ cursor: default;
 }
 
 .contact-but {
-  width: 180px;
+  width: 300px;
+  text-align: center;
+  margin: 0;
   padding: 10px 60px;
 }
 /*================footer=====================*/
@@ -2005,6 +2015,8 @@ input[type="submit"]{
   font-size: 0;
   background-color: transparent;
   border: none;
+  
+  cursor: pointer;
 }
 .btn-close::after,
 .btn-close::before {
@@ -2028,13 +2040,12 @@ input[type="submit"]{
   position: fixed;
   bottom: 18%;
   left: 25%;
-  z-index: 10;
+  z-index: 11;
   width: 940px;
-  height: 446px;
   height: 446px;
   background-color: #ffffff;
   background-image: url("../img/map-big.jpg");
-  box-shadow: 0 0 15px 0 #000000; 
+  box-shadow: 0 0 25px 0 #000000; 
 }
 /*Форма обратной связи*/
 .btn-feedback {
@@ -2043,8 +2054,8 @@ input[type="submit"]{
 }
 .feedback {
   position: fixed;
-  top: 20%;
-  left: 30%;
+  top: 15%;
+  left: 25%;
   z-index: 10;
   width: 620px;
   height: 423px;
@@ -2054,6 +2065,7 @@ input[type="submit"]{
   line-height: 18px;
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
+  box-shadow: 0 0 25px 0 #000000; 
   
 }
 .wrapper-feedback {
@@ -2147,6 +2159,10 @@ input[type="submit"]{
 .content-field-input {
   width: 458px;
   height: 115px;
-  margin: 0;
-  padding: 0;
+  
+}
+
+.error-fields {
+  border: 3px solid #ee3643;
+  border-radius: 2px;  
 }

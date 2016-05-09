@@ -12,7 +12,7 @@
     <title>О странице</title>
   </head>
   <body>
-    <header>
+     <header>
       <div  class="status-panel-container">
         <div class="wrapper">
           <h1 class="logo">
@@ -62,14 +62,15 @@
               <div class="lp-login-registr clearfix">
                 <div class="lp-login-enter" href="#"><i class="icon-login"></i>Войти</div>
                 <div class="lp-login-checkin" href="#">Регистрация</div>
-              <!--</div>
-              <div class="lp-login-user-panel  not-visible">-->
+              </div>
+              <div class="lp-login-user-panel  not-visible">
                 <div class="account-menu-user-panel">
-                  <a href="#" class="account-menu-exit not-visible">
-                  <i class="icon-user"></i>Равшан Джамшутович<i class="icon-logout"></i>
+                  <a href="#" class="account-menu-exit">
+                    <i class="icon-user"></i>Равшан Джамшутович<i class="icon-logout"></i>
                   </a>
                 </div>
-                <div class="account-menu-user-links not=visible">
+               
+                <div class="account-menu-user-links">
                   <a href="#">Мои заказы</a>
                   <span class="point"></span>
                   <a href="#">Личный кабинет</a>
@@ -80,6 +81,7 @@
           <nav>
             <ul class="nav-top-menu">
               <li><a href="index.html">Главная</a></li>
+              <!-- в активном пукте меню заменяем a на span на всех страницах. Так как пункт меню не должен быть ссылкой на самого себя -->
               <li><a href="#">Компания</a></li>
               <li><span>Каталог</span></li>
               <li><a href="#">Новости</a></li>
@@ -363,5 +365,6 @@
         </div>
       </div>  
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
