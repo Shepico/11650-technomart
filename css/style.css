@@ -126,16 +126,6 @@ img {
   
 }
 
-/*.inl-block{
-  display: inline-block;
-  
-  margin: 0;
-  padding: 0;
-  
-  vertical-align: top; 
-  
-}*/
-
 .clearfix::after{
   content: "";
   display: table;
@@ -163,9 +153,7 @@ img {
 
 body{
   /*позиционирование*/
-  /*  width: 1200p/x;*/
   /*блочная модель*/
-  /*margin: 0 auto; */
   /*типографика*/
   font-family: "Cuprum", "Tahoma", sans-serif;
   font-size: 17px;
@@ -183,7 +171,7 @@ body{
 
 /*шапка*/
 header {
-  padding-bottom: 60px;
+  padding-bottom: 65px;
   background-color: #f1f5f7;  
   color: #ffffff;
 }
@@ -537,7 +525,7 @@ nav {
 /*==========slider==============*/
 /*общие классы слайдера*/
 .catalog-services {
-  margin: 55px 0 60px 0;    
+  margin: 60px 0 32px 0;    
 }
 .service-name {
 position: relative;
@@ -585,7 +573,7 @@ margin-left: 0;
 background-color: #f6b22d;
 background-image: url("../img/index-pail.png");
 background-repeat: no-repeat;
-background-position: 80% center;
+background-position: 83% center;
 
 }
 
@@ -593,14 +581,14 @@ background-position: 80% center;
 background-color: #4aafde; 
 background-image: url("../img/index-drill.png");
 background-repeat: no-repeat;
-background-position: 80% center;
+background-position: 86% center;
 }
 
 .service-name.technics { 
 background-color: #cc79d1;
 background-image: url("../img/index-tractor.png");
 background-repeat: no-repeat;
-background-position: 80% center;  
+background-position: 85% center;  
 }
 
 .slider {
@@ -622,7 +610,7 @@ background-position: 80% center;
 background-color: #f6b22d;
 background-image: url("../img/index-auto.png");
 background-repeat: no-repeat;
-background-position: 80% center;   
+background-position: 85% center;   
 }
 /*==Слайдер большой================*/
 .slider-controls-buttons {
@@ -988,12 +976,13 @@ cursor: default;
 
 /*--------------------------------*/
 .fabricator{
-  margin-bottom: 65px;
+  margin-bottom: 63px;
 }
 
 .popular-fabricator-header {
   display: block;
   height: 90px;
+  
   margin-bottom: 20px;
   background-color: #f7f3ec;  
 }
@@ -1081,7 +1070,7 @@ cursor: default;
 
 .services-panel{  
   background-color: #f2f6f8;
-  height: 522px;
+  height: 523px;
 }
 
 .services-head {
@@ -1118,15 +1107,19 @@ cursor: default;
 }
 
 .services-slider>input+label{
+  position: relative;
   display: block;
-  width: 240px;
+  width: 195px;
+  height: 27px;
   margin: 0;
-  padding: 0; 
-  padding: 16px 23px;
+  padding: 0 23px; 
+  padding-top: 15px;
+  padding-bottom: 17px;
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
   text-decoration: none;
+  text-align: left;
   background-color: #32425c;
   color: #ffffff;  
   
@@ -1134,6 +1127,16 @@ cursor: default;
   border-bottom: #293449 solid 1px;
   cursor: pointer;
 }  
+
+.shadow-menu {
+  position: absolute;
+  top: -45px;
+  left: 231px;
+  z-index: 5;
+  width: 10px;
+  height: 272px;
+  background: url("../img/shadow-menu.png");
+}
 
 .services-slider>input+label:hover {
   border-bottom: #293449;
@@ -1145,16 +1148,13 @@ cursor: default;
   color: #32425c;
 }
 .services-slider-content {
-  /*float: right;
-  width: 620px;
-  height: 280px;*/
+  
   position: absolute;
-  top: 0px;
-  /*left: 0px;*/
+  top: 5px;
   right: 0px;
   bottom: 0px;
   z-index: 0;
-  width: 620px;
+  width: 621px;
   text-align: left;
   
   background-repeat: no-repeat;
@@ -1223,7 +1223,7 @@ cursor: default;
 
 /*-----------------------*/
 .about {
-  height: 538px;  
+  height: 535px;  
 }
 .about-company{
   float: left;
@@ -1250,7 +1250,7 @@ cursor: default;
   margin: 0;
   padding: 0;
   margin-top: 28px;
-  margin-bottom: 40px;
+  margin-bottom: 49px;
   line-height: 30px;
   font-weight: bold;
   list-style: none;
@@ -1314,6 +1314,8 @@ cursor: default;
   margin: 0;
   padding: 10px 60px;
 }
+
+
 /*================footer=====================*/
 /*Стили подвала на страницах*/
 /*подвал*/
