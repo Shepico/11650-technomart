@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <!---шрифты-->
+    <!--Подключены через СSS-->
     <!--<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> <!--PT Sans-->
     <!--<link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'> <!--cuprum-->
     <!--css-->
@@ -16,7 +17,6 @@
       <div  class="status-panel-container">
         <div class="wrapper">
           <h1 class="logo">
-            <!-- inl-block - таких классов не создаем. На практике такие случаи бывают, но в большинстве случаем это относится к float элементам. Удаляем его, а стили задаем самим блокам через конкретный класс -->
             <a href="index.html">ТЕХНОМАРТ</a>
           </h1>
           <div class="iu-search">
@@ -81,7 +81,6 @@
           <nav>
             <ul class="nav-top-menu">
               <li><a href="index.html">Главная</a></li>
-              <!-- в активном пукте меню заменяем a на span на всех страницах. Так как пункт меню не должен быть ссылкой на самого себя -->
               <li><a href="#">Компания</a></li>
               <li><span>Каталог</span></li>
               <li><a href="#">Новости</a></li>
@@ -153,7 +152,7 @@
                   <input type="radio" class="radio" value="сетевые" name="power" id="electric"><label for="electric">сетевые</label>
                 </div>
               </fieldset>
-              <input type="submit" id="button-submit" name="button-submit" value="Показать">
+              <input type="submit" class="fdc-btn-submit" id="button-submit" name="button-submit" value="Показать">
             </form>
           </div>
           <!--Фильтр конец-->
@@ -365,6 +364,7 @@
         </div>
       </div>  
     </footer>
+    <!--Подключение скрипта-->    
     <script src="js/script.js"></script>
   </body>
 </html>
