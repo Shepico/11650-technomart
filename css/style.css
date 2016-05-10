@@ -2223,4 +2223,67 @@ input[type="submit"]{
 .error-fields {
   border: 3px solid #ee3643;
   border-radius: 2px;  
-}}
+}
+
+.iframe-map {
+  frameborder: 0;
+  border: 0; 
+}
+
+/*окно покупки товара*/
+.add-cart-window {
+  position: fixed;
+  top: 35%;
+  left: 35%;
+  z-index: 10;
+  width: 620px;
+  height: 275px;
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0 0 20px 0 #000000;
+}
+
+.add-cart-part-content {
+  position: relative;
+  width: 620px;
+  height: 170px;  
+  padding-left: 180px;
+  font-size: 30px;
+  line-height: 170px;  
+}
+
+.icon-ok {
+  position: absolute;
+  top: 47px;
+  left: 80px;
+  opacity: 1;
+}
+
+.add-cart-part-btn {
+  position: relative;
+  width: 620px;
+  height: 112px;
+  background-color: #f1f1f1;
+}
+
+.add-cart-btn {
+  position: absolute;
+  top: 37px;
+  width: 220px;
+  height: 38px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 2px;
+}
+
+.add-cart-checkout {
+  left: 80px;
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
+.add-cart-shop {
+  right: 80px;
+}

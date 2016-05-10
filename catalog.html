@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <!---шрифты-->
     <!--Подключены через СSS-->
-    <!--<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> <!--PT Sans-->
-    <!--<link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'> <!--cuprum-->
+    <!--<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> PT Sans-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'> cuprum-->
     <!--css-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">    
@@ -60,8 +60,8 @@
             <!--Форма логина-->
             <div class="lp-login">
               <div class="lp-login-registr clearfix">
-                <div class="lp-login-enter" href="#"><i class="icon-login"></i>Войти</div>
-                <div class="lp-login-checkin" href="#">Регистрация</div>
+                <div class="lp-login-enter"><i class="icon-login"></i>Войти</div>
+                <div class="lp-login-checkin">Регистрация</div>
               </div>
               <div class="lp-login-user-panel  not-visible">
                 <div class="account-menu-user-panel">
@@ -364,6 +364,21 @@
         </div>
       </div>  
     </footer>
+    <!--popup window-->
+    <!--class невидимого блока not-visible-->
+    <!--Окно добавления в корзину-->
+    <div class="add-cart-window not-visible">
+      <div class="add-cart-part-content">
+        <img class="icon-ok" src="img/icon-ok.png" width="66" height="66" alt="ok">
+        Товар добавлен в корзину!
+      </div>
+      <div class="add-cart-part-btn">
+        <button class="add-cart-btn add-cart-checkout">Оформить заказ</button>
+        <button class="add-cart-btn add-cart-shop">Продолжить покупки</button>
+      </div>
+      <button class="btn-close btn-add-cart-close" type="button" name="map-big-close">Закрыть</button>
+    </div>
+    
     <!--Подключение скрипта-->    
     <script src="js/script.js"></script>
   </body>

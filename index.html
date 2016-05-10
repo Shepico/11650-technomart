@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <!---шрифты-->
     <!--Подключены через СSS-->
-    <!--<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> <!--PT Sans-->
-    <!--<link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'> <!--cuprum-->
+    <!--<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> PT Sans-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'> cuprum-->
     <!--css-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -345,7 +345,7 @@
           <p class ="services-content">
             Мы можем доставить Ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многоми транспортными компаниями.             
-          </p class ="services-content">
+          </p>
           <ul>
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
@@ -420,7 +420,7 @@
     <!--class невидимого блока not-visible-->
     <!--Большая карта-->
     <div class="map-big not-visible">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462792306362" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462792306362" width="940" height="446"  allowfullscreen></iframe>
       <button class="btn-close btn-map" type="button" name="map-big-close">Закрыть</button>
     </div>
     <!--Форма обратной связи-->
@@ -428,15 +428,16 @@
       <div class="wrapper-feedback clearfix">
           <fieldset class="name-field">
             <label class = "label-fields" for="name-field">Ваше имя:</label>
-            <input type="text" class="str-fields name-field-input" id="name-field" placeholder="Представьтесь, пожалуйста"></input>
+            <input type="text" class="str-fields name-field-input" id="name-field" placeholder="Представьтесь, пожалуйста">
           </fieldset>
           <fieldset class="email-field">
             <label class = "label-fields" for="email-field">Ваш e-mail:</label>
-            <input type="email" class="str-fields email-field-input" id="email-field" placeholder="Для отправки ответа"></input>
+            <input type="email" class="str-fields email-field-input" id="email-field" placeholder="Для отправки ответа">
           </fieldset>
           <fieldset class="content-field">
             <label class = "label-fields" for="content-field">Текст письма:</label>
-            <input type="textarea" class="str-fields content-field-input" id="content-field" placeholder="В свободной форме"></input>
+            <textarea class="str-fields content-field-input" id="content-field" placeholder="В свободной форме"></textarea>
+            
           </fieldset>  
         
       </div>
