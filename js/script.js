@@ -98,3 +98,14 @@
         event.preventDefault();
         panelBigMap.classList.add("not-visible");
       });
+      /*//Окно покупки
+      var btnBuy = document.querySelectorAll(".item-actions-buy");
+      
+      for (var i = 0; i < btnBuy.length; i++) { 
+        i.addEventListener("click", function (event) {
+          event.preventDefault();
+          console.log(this); 
+        });    
+      } ;*/
+      
+            

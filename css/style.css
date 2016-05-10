@@ -2096,7 +2096,7 @@ input[type="submit"]{
 
 .map-big {
   position: fixed;
-  bottom: 18%;
+  top: 25%;
   left: 25%;
   z-index: 11;
   width: 940px;
@@ -2112,8 +2112,8 @@ input[type="submit"]{
 }
 .feedback {
   position: fixed;
-  top: 15%;
-  left: 25%;
+  top: 20%;
+  left: 35%;
   z-index: 10;
   width: 620px;
   height: 423px;
@@ -2217,6 +2217,7 @@ input[type="submit"]{
 .content-field-input {
   width: 458px;
   height: 115px;
+  resize: none;
   
 }
 
