@@ -122,10 +122,9 @@ img {
   display: none;
 }
 
-/* Нужен будет если реализовать функцию "Положить товар в корзину"
-.backgraund-red{
+.background-red{
   background-color: #ee3643;
-}*/
+}
 /*===========================================*/
 
 body{
@@ -230,24 +229,15 @@ header {
 
 .search-form input {
   width: 100px;
-  display:none;  
+ /* display:none;  */
   border: none; 
 }
 .iu-search:active{
   background-color: #ffffff;
 }
 
-.search-form:active>label {
-  display:none;
-}
-
 .iu-search:active>.icon-search{
   color: #ee3643;
-}
-
-.iu-search:active>a>input{
-  display: inline-block;
-  vertical-align: top;
 }
 
 .icon-bookmark {
@@ -428,7 +418,6 @@ header {
   position: absolute;
   top: 12px;
   left: 11px;
-  
 }
 
 .icon-logout {
@@ -436,9 +425,6 @@ header {
   top: 13px;
   right: 3px;
   margin-left: 25px;
-
-
-
   cursor: pointer;
 }
 .account-menu-user-links{
@@ -467,7 +453,6 @@ header {
 }
 .account-menu-user-links>a {
   display: inline-block;
-  /*margin-left: 15px;*/
   font-size: 16px;
   line-height: 24px;
   vertical-align: top;
@@ -512,7 +497,7 @@ nav {
   color: #ffffff;
 }
   
-.nav-top-menu>li>a {
+ .nav-tm-item>a {
   display:block;
   padding: 19px 33px;
   text-decoration: none;
@@ -520,11 +505,11 @@ nav {
   
 }
 
-.nav-top-menu>li>a:hover {
+.nav-tm-item>a:hover {
   background-color: #293449;
 }  
 
-.nav-top-menu>li>a:active {
+.nav-tm-item>a:active {
   opacity: 0.5;
   background-color: #293449;
 }  
@@ -825,8 +810,6 @@ color: #ffffff;
   
 }
 
-
-
 .item-actions-buy:hover {
   background-color: #5fbb2d;
   border: 3px solid #5fbb2d;
@@ -1066,7 +1049,7 @@ li:nth-of-type(4n)>.fabricator-item {
   vertical-align: top;
   
 }
-.fabricator-item>a>img {
+.fi-img {
   vertical-align: middle;
   max-width: 100%;  
 }
@@ -1272,7 +1255,7 @@ li:nth-of-type(4n)>.fabricator-item {
   margin-top: 27px;  
 }
 
-.about-company>ul {
+.about-tk {
   margin: 0;
   padding: 0;
   margin-top: 14px;
@@ -1281,7 +1264,7 @@ li:nth-of-type(4n)>.fabricator-item {
   font-weight: bold;
   list-style: none;
 }
-.about-company>ul>li {
+.about-tk>li {
   position: relative;
   padding-left: 38px;  
 }
@@ -1390,7 +1373,7 @@ footer{
   vertical-align: bottom;  
 }
 
-.nav-footer-one-menu>li{
+.om-item{
   display: inline-block;
   margin: 0;
   margin-left: 55px;
@@ -1399,19 +1382,19 @@ footer{
   list-style: none;
 }   
 
-.nav-footer-one-menu>li>span {
+.om-item>span {
     color: #ffffff;    
 }
 
-.nav-footer-one-menu>li>a {
+.om-item>a {
   text-decoration: none;
   color: #ffffff;    
 }
-.nav-footer-one-menu>li>a:hover{
+.om-item>a:hover{
   text-decoration: underline;
 }
 
-.nav-footer-one-menu>li>a:active{
+.om-item>a:active{
   opacity: 0.5;
 }
 /*------------------*/
@@ -1439,22 +1422,22 @@ footer{
   vertical-align: top;  
 }
 
-.nav-footer-two-menu>li{
+.tm-item{
   display: inline-block;
   margin-left: 55px;
   list-style: none;
   vertical-align: top
   
 }   
-.nav-footer-two-menu>li>a{
+.tm-item>a{
   text-decoration: none;
   color: #f1c77e;
 }
-.nav-footer-two-menu>li>a:hover {
+.tm-item>a:hover {
   text-decoration: underline;
 }
 
-.nav-footer-two-menu>li>a:active {
+.tm-item>a:active {
   opacity: 0.5;
 }
 /*----------------*/
@@ -1482,7 +1465,7 @@ footer{
   margin-right: 95px;
 }
 
-.fb-social>div {
+.fb-social-item {
   position: relative;
   display: inline-block;
   width: 38px;
@@ -1490,7 +1473,7 @@ footer{
   margin-left: 4px;  
   vertical-align: top;
 }
-.fb-social>div>a {
+.fb-social-item>a {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -1504,12 +1487,12 @@ footer{
   border-radius: 50%;
 }
 
-.fb-social>div>a:hover {
+.fb-social-item>a:hover {
   background-color: #ee3643;  
   
 }
 
-.fb-social>div>a>i{
+.fb-social-item i{
   position: absolute;
   top: 13px;
   left: 11px;
@@ -1574,7 +1557,7 @@ footer{
   text-transform: uppercase;
   
 }
-.breadcrumbs>ul>li{
+.breadcrumbs-item {
   position: relative;
   display:inline-block;
   margin: 21px 0;
@@ -1583,7 +1566,7 @@ footer{
   vertical-align:top;
   list-style:none; 
 }
-.breadcrumbs>ul>li>a {
+.breadcrumbs-item >a {
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -1664,14 +1647,14 @@ footer{
   vertical-align: top;
 }
 
-.gps-select-menu>li{
+.gps-select-menu-item{
   display:inline-block;
   width: 120px;
   vertical-align: top;
   list-style:none;   
 }
 
-.gps-select-menu>li>a{
+.gps-select-menu-item>a{
   display:inline-block;
   margin: 10px 0;  
   font-family: "PT Sans", "Tahoma", sans-serif;
@@ -1684,17 +1667,17 @@ footer{
   
 }
 
-.gps-select-menu>li>a:hover{
+.gps-select-menu-item>a:hover{
   border-bottom: 1px solid #ee3643;  
   color: #444444;
 }
 
-.gps-select-menu>li>a:active{
+.gps-select-menu-item>a:active{
   color: #ee3643;
   border:none;
 }
   
-.gps-select-menu>li:not(:first-child)>a{
+.gps-select-menu-item:not(:first-child)>a{
   margin-left: -0.25em; 
 } 
 .icon-up-dir,
@@ -1734,7 +1717,7 @@ footer{
   padding: 0;
   margin-top: 30px;
 }
-.goods-paginator>ul>li {
+.paginator-item {
   display:inline-block;
   width: 36px;
   height: 36px;
@@ -1747,11 +1730,11 @@ footer{
   border-radius: 2px;
 }
 
-.goods-paginator>ul>li:last-child {
+.paginator-item:last-child {
   width: 136px;
 }
 
-.goods-paginator>ul>li>a{
+.paginator-item>a{
   display: block;
   font-size: 13px;
   line-height: 36px;
@@ -1760,12 +1743,12 @@ footer{
   color: #000000;
 }
 
-.goods-paginator>ul>li>a:hover{
+.paginator-item>a:hover{
   border: 1px solid #bdc6ca;
   border-radius: 2px;
 }
 
-.goods-paginator>ul>li>a:active{
+.paginator-item>a:active{
   border: 1px solid #ee3643;
   border-radius: 2px;
 }
@@ -2277,6 +2260,8 @@ input[type="submit"]{
   color: #000000;
   border: none;
   border-radius: 2px;
+  
+  cursor: pointer;
 }
 
 .add-cart-checkout {

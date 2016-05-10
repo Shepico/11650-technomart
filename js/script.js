@@ -98,14 +98,58 @@
         event.preventDefault();
         panelBigMap.classList.add("not-visible");
       });
-      /*//Окно покупки
+      //Окно покупки
       var btnBuy = document.querySelectorAll(".item-actions-buy");
+      var WindowAddCart = document.querySelector(".add-cart-window");
+      var btnWindowAddCartClose = document.querySelector(".btn-add-cart-close"); 
+      var PanelBasket = document.querySelector(".iu-basket");
+      
       
       for (var i = 0; i < btnBuy.length; i++) { 
-        i.addEventListener("click", function (event) {
+        btnBuy[i].addEventListener("click", function (event) {
           event.preventDefault();
-          console.log(this); 
+          WindowAddCart.classList.toggle("not-visible");           
+          if (PanelBasket.classList.contains) {
+            PanelBasket.classList.add("background-red");
+          }
+          
         });    
-      } ;*/
+      } ;
       
+      btnWindowAddCartClose.addEventListener("click", function(event){
+        event.preventDefault();
+        WindowAddCart.classList.add("not-visible");        
+      });
+            
+      //Закладки Красный пункт
+      var btnBookmark = document.querySelectorAll(".item-actions-bookmark");
+      var PanelBookmark = document.querySelector(".iu-marker");
+      
+      
+      for (var i = 0; i < btnBookmark.length; i++) { 
+        btnBookmark[i].addEventListener("click", function (event) {
+          event.preventDefault();
+          if (PanelBookmark.classList.contains) {
+            PanelBookmark.classList.add("background-red");
+          }
+          
+        });    
+      } ;
+      /*//Поиск по щелчку
+      var btnSearch = document.querySelector(".search-form");
+      var labelSearch = document.querySelector(".search-form>label");
+      var iconSearch = document.querySelector(".icon-search");
+      var inputSearch = document.querySelector(".input-search");
+      
+      btnSearch.addEventListener("click", function(event){
+        event.preventDefault();
+        inputSearch.classList.toggle("not-visible"); 
+        labelSearch.classList.toggle("not-visible");         
+      });
+      
+      inputSearch.addEventListener("click", function(event){
+        event.preventDefault();
+        inputSearch.classList.toggle("not-visible"); 
+        labelSearch.classList.toggle("not-visible");         
+      });*/
             
