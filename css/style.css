@@ -228,8 +228,7 @@ header {
 }
 
 .search-form input {
-  width: 100px;
- /* display:none;  */
+  width: 250px;
   border: none; 
 }
 .iu-search:active{
