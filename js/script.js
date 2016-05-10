@@ -1,6 +1,6 @@
 //¬ход в кабинет пользовател€
       var btnLoginEnter = document.querySelector(".lp-login-enter");
-      var btnLoginExit = document.querySelector(".account-menu-exit");
+      var btnLoginExit = document.querySelector(".icon-logout");
       var panelLogin = document.querySelector(".lp-login-registr");
       var panelUser = document.querySelector(".lp-login-user-panel");
       
