@@ -1,37 +1,37 @@
 /*Подключаем PT SANS*/ 
 @font-face {
-    font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: normal;
-  src: local('PT Sans'), url(../fonts/ptsans.woff2), url(../fonts/ptsans.woff);
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    src: local("PT Sans"), url(../fonts/ptsans.woff2), url(../fonts/ptsans.woff);
 }
 
 @font-face {
-    font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: bold;
-  src: local('PT Sans bold'), url(../fonts/ptsansbold.woff2), url(../fonts/ptsansbold.woff);
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: bold;
+    src: local("PT Sans bold"), url(../fonts/ptsansbold.woff2), url(../fonts/ptsansbold.woff);
 }
 /*Подключаем CUPRUM*/ 
 @font-face {
-    font-family: 'Cuprum';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Cuprum'), url(../fonts/cuprum.woff2), url(../fonts/cuprum.woff);
+    font-family: "Cuprum";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Cuprum"), url(../fonts/cuprum.woff2), url(../fonts/cuprum.woff);
 }
 
 @font-face {
-    font-family: 'Cuprum';
-  font-style: normal;
-  font-weight: bold;
-  src: local('Cuprum Bold'), url(../fonts/cuprumbold.woff2), url(../fonts/cuprumbold.woff);
+    font-family: "Cuprum";
+    font-style: normal;
+    font-weight: bold;
+    src: local("Cuprum Bold"), url(../fonts/cuprumbold.woff2), url(../fonts/cuprumbold.woff);
 }
 
 @font-face {
-    font-family: 'Cuprum';
-  font-style: italic;
-  font-weight: bold;
-  src: local('Cuprum Bold Italic'), url(../fonts/cuprumbolditalic.woff2), url(../fonts/cuprumbolditalic.woff);
+    font-family: "Cuprum";
+    font-style: italic;
+    font-weight: bold;
+    src: local("Cuprum Bold Italic"), url(../fonts/cuprumbolditalic.woff2), url(../fonts/cuprumbolditalic.woff);
 }
 
 /*Иконочный шрифт*/
@@ -146,6 +146,7 @@ img {
 .background-red {
     background-color: #ee3643;
 }
+
 /*===========================================*/
 
 body {
@@ -292,8 +293,10 @@ header {
 }
   /*login panel*/
 .login-panel {
-    height: 68px;
-    margin: 45px 0;
+    min-height: 68px;
+    margin: 0;
+    margin-top: 45px;
+    margin-bottom: 38px;
 }
 
 .lp-shop {
@@ -316,7 +319,7 @@ header {
 
 .lp-contacts-phone {
     position: relative;
-    height: 30px;
+    min-height: 30px;
     margin-bottom: 10px;
     padding-top: 10px;
     border: 3px solid #ffffff;
@@ -352,7 +355,7 @@ header {
 .lp-login-registr {
     float: right;
     max-width: 300px;
-    height: 45px;
+    min-height: 45px;
     margin: 0;
     padding: 0;
 }
@@ -1056,7 +1059,7 @@ li:nth-of-type(4n)>.fabricator-item {
 
 .services-panel {
     background-color: #f2f6f8;
-    height: 523px;
+    min-height: 523px;
 }
 
 .services-head {
@@ -1083,7 +1086,7 @@ li:nth-of-type(4n)>.fabricator-item {
 /*Слайдер нижний*/
 .services-slider {
     position: relative;
-    height: 285px;
+    min-height: 285px;
     text-align: center;
 }
 
@@ -1395,12 +1398,18 @@ footer {
     line-height: 24px;
 }
 
+.footer-top-two-address p {
+    margin: 0;
+    padding: 0;
+
+}
+
 .nav-footer-two-menu {
     display: inline-block;
     width: auto;
     margin: 0;
     padding: 0;
-    margin-left: 35px;
+    margin-left: 40px;
     text-align: right;
     vertical-align: top;
 }
@@ -1440,6 +1449,11 @@ footer {
     width: 230px;
     margin: 37px 0;
     margin-right: 150px;
+}
+
+.fb-copyright p {
+  margin: 0;
+  padding: 0;
 }
 /*------------------*/
 .fb-social {
@@ -1484,6 +1498,10 @@ footer {
     margin-right: 42px;
 }
 
+.fb-feedback p{
+  margin: 0;
+  padding: 0;
+}
 .fb-feedback>a {
     text-decoration: none;
     color: #c6a771;
@@ -1500,6 +1518,11 @@ footer {
 .fb-design {
     width: 100px;
     text-align: left;
+}
+
+.fb-design p {
+  margin: 0;
+  padding: 0;
 }
 
 .fb-design>a {
@@ -1519,7 +1542,10 @@ footer {
 .breadcrumbs {
     height: 60px;
 }
-
+.icon-home {
+  font-size: 16px;
+  
+}
 .breadcrumbs>ul {
     margin: 0;
     padding: 0;
@@ -1534,7 +1560,7 @@ footer {
     display: inline-block;
     margin: 21px 0;
     margin-left: -0.25em;
-    margin-right: 40px;
+    margin-right: 37px;
     vertical-align: top;
     list-style: none;
 }
@@ -1549,16 +1575,18 @@ footer {
 }
 
 .breadcrumbs>ul li+li::before {
-    content: "";
-    height: 8px;
-    width: 8px;
-    margin: -6px 0 0;
-    border-bottom: 1px solid #c1c6ce;
-    border-right: 1px solid #c1c6ce;
     position: absolute;
-    left: -28px;
-    top: 11px;
+    left: -27px;
+    top: 10px;
+    
+    width: 8px;
+    height: 8px;
+    margin: 0;
+    margin-top: -6px;
+    border-bottom: 1px solid #c1c6ce;
+    border-right: 1px solid #c1c6ce;    
     transform: rotate(-45deg);
+    content: "";
 }
 
 .head-catalog {
@@ -1701,8 +1729,7 @@ footer {
     text-align: center;
     vertical-align: middle;
     list-style: none;
-    border: 1px solid #e5e5e5;
-    border-radius: 2px;
+    
 }
 
 .paginator-item:last-child {
@@ -1716,6 +1743,8 @@ footer {
     text-decoration: none;
     text-transform: uppercase;
     color: #000000;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
 }
 
 .paginator-item>a:hover {
@@ -1726,6 +1755,11 @@ footer {
 .paginator-item>a:active {
     border: 1px solid #ee3643;
     border-radius: 2px;
+}
+.active-item-btn {
+  background-color: #ee3643;
+  color: #ffffff;  
+  border: 1px solid #ee3643;
 }
 
 .about-goods {
