@@ -242,11 +242,12 @@ header {
 .icon-bookmark {
   margin-right: 5px;  
 }
+
 .iu-marker:active {
   opacity: 0.6;
 } 
 .iu-basket {
-  width: 131px;
+  width: 136px;
 }
 
 .iu-basket:active {
@@ -256,8 +257,7 @@ header {
 .icon-basket {
   margin-right: 7px;
 }
-.iu-checkout {
- margin-left: 0;
+.iu-checkout { 
  padding-left: 0; 
  text-align: center;  
  background-color: #63a63e;
