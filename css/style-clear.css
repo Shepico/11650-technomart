@@ -648,14 +648,12 @@ nav {
     border-right: 5px solid #fff;
     border-bottom: 5px solid #fff;
     border-radius: 5px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
     cursor: pointer;
     content: "";
 }
 .slider-prev::after {
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
+    transform: rotate(135deg);
     left: 27px;
 }
 /*=====================================*/
@@ -1476,8 +1474,7 @@ footer {
     margin-top: -6px;
     border-bottom: 1px solid #c1c6ce;
     border-right: 1px solid #c1c6ce;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
     content: "";
 }
 .head-catalog {
@@ -1780,8 +1777,7 @@ footer {
 .input-click-checkbox:checked+.label-click-checkbox::after {
     margin: 0;
     margin-top: -10px;
-    -webkit-transform: rotate(225deg);
-            transform: rotate(225deg);
+    transform: rotate(225deg);
 }
 .label-click-checkbox:active::after {
     border-top: 3px solid #f3f4f5;
@@ -1836,8 +1832,7 @@ footer {
     border-right: 5px solid #c1c1c1;
     border-radius: 1px;
     box-shadow: 2px 0 0 0 #fff, inset -2px 0 0 0 #fff;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
     content: "";
 }
 .checkbox:checked+label:hover::after {
@@ -1911,12 +1906,10 @@ input[type="submit"] {
     content: "";
 }
 .btn-close::after {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 .btn-close::before {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 .map-big {
     position: fixed;

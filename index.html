@@ -19,12 +19,11 @@
           <h1 class="logo">
             <a href="index.html">ТЕХНОМАРТ</a>
           </h1>
-          <div class="iu-search">
-            <i class="icon-search"></i>
-            <form class="search-form" action="#" method="post">
-              <label for="in-search">Поиск:</label>    
-              <input type="text" class="input-search not-visible" id="in-search" name="in-search">   
-            </form>  
+          <div class="iu-search">             
+            <form class="search-form" action="#" method="post"> 
+              <input type="text" class="input-search " id="in-search" name="in-search" placeholder="Поиск">              
+              <label for="in-search" class="icon-search"></label> 
+            </form>            
           </div>
           <div class="iu-marker">
             <i class="icon-bookmark"></i>
@@ -157,14 +156,14 @@
       </div>     
       <!--Конец модульной верстки-->
 
-      <div class="popular wrapper">
+      <div class="popular wrapper clearfix">
         <div class="popular-goods-header clearfix">
           <h2>Популярные товары:</h2>
           <a href="#">Все популярные товары</a>
         </div>  
           <article class="goods-item item">
             <div class="item-actions">
-              <a class="item-actions-buy"><i class="icon-basket"></i>купить</a>
+              <a class="item-actions-buy" href="basket-buy.html"><i class="icon-basket"></i>купить</a>
               <a class="item-actions-bookmark">в закладки</a>
             </div>
             <div class="item-picture">
@@ -177,20 +176,20 @@
           
           <article class="goods-item item">
             <div class="item-actions">
-              <a class="item-actions-buy"><i class="icon-basket"></i>купить</a>
+              <a class="item-actions-buy" href="basket-buy.html"><i class="icon-basket"></i>купить</a>
               <a class="item-actions-bookmark">в закладки</a>
             </div>
             <div class="item-picture">
               <img src="img/bfg-3000.jpg" alt="bfg-3000" width="127" height="112">
             </div>
-            <h1 class="item-about"> Перфоратор BOSCH <br> BFG 3000</h1> 
+            <h1 class="item-about"> Перфоратор BOSCH <br> BFG 3000 </h1> 
             <p class="item-cost item-cost-old">22500</p>
             <p class="item-cost item-cost-new">15500</p>
           </article> 
 
           <article class="goods-item item">
             <div class="item-actions">
-              <a class="item-actions-buy"><i class="icon-basket"></i>купить</a>
+              <a class="item-actions-buy" href="basket-buy.html"><i class="icon-basket"></i>купить</a>
               <a class="item-actions-bookmark">в закладки</a>
             </div>
             <div class="item-picture">
@@ -203,7 +202,7 @@
          
           <article class="goods-item item new">
             <div class="item-actions">
-              <a class="item-actions-buy"><i class="icon-basket"></i>купить</a>
+              <a class="item-actions-buy" href="basket-buy.html"><i class="icon-basket"></i>купить</a>
               <a class="item-actions-bookmark">в закладки</a>
             </div>
             <div class="item-picture">
@@ -294,36 +293,19 @@
           <div class="services-slider">
             <div class="shadow-menu"></div>
             <input type="radio" name="services-slider" id="delivery" checked="checked">
-            <label for="delivery">Доставка</label>
+            <label class="ss-label" for="delivery">Доставка</label>
             <div class="services-slider-content delivery">
               <div class="ss-content">
                 <h2>Доставка</h2>
                 <p class ="services-content">
                   Мы с удовольствие доставим Ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы не плохо заработаем поднимая его на Ваш этаж!
-                  
-                  Мы с удовольствие доставим Ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы не плохо заработаем поднимая его на Ваш этаж!
-                  Мы с удовольствие доставим Ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы не плохо заработаем поднимая его на Ваш этаж!
-                  Мы с удовольствие доставим Ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы не плохо заработаем поднимая его на Ваш этаж!
-                  Мы с удовольствие доставим Ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы не плохо заработаем поднимая его на Ваш этаж!
-                  Мы с удовольствие доставим Ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы не плохо заработаем поднимая его на Ваш этаж!
-                  Мы с удовольствие доставим Ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы не плохо заработаем поднимая его на Ваш этаж!
-                  Мы с удовольствие доставим Ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы не плохо заработаем поднимая его на Ваш этаж!
-                  Мы с удовольствие доставим Ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы не плохо заработаем поднимая его на Ваш этаж!
+                  Ведь мы не плохо заработаем поднимая его на Ваш этаж!                 
                 </p>  
               </div>                          
             </div>
             
             <input type="radio" name="services-slider" id="garanty">
-            <label for="garanty">Гарантия</label>
+            <label class="ss-label" for="garanty">Гарантия</label>
             <div class="services-slider-content garanty">
               <div class="ss-content">
                 <h2>Гарантия</h2>
@@ -338,7 +320,7 @@
             
             
             <input type="radio" name="services-slider" id="credit">
-            <label for="credit">Кредит</label>
+            <label class="ss-label" for="credit">Кредит</label>
             <div class="services-slider-content credit">
               <div class="ss-content">
                 <h2>Кредит</h2>
@@ -478,7 +460,7 @@
     </div>
     
      <!--Подключение скрипта-->    
-    <script src="js/script.min.js"></script> 
+    <script src="js/script.js"></script> 
     <script src="js/feedback.min.js"></script> 
     
   </body>

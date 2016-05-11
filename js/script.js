@@ -1,4 +1,4 @@
-//Вход в кабинет пользователя
+      //Вход в кабинет пользователя
       var btnLoginEnter = document.querySelector(".lp-login-enter");
       var btnLoginExit = document.querySelector(".icon-logout");
       var panelLogin = document.querySelector(".lp-login-registr");
@@ -15,7 +15,7 @@
         panelLogin.classList.toggle("not-visible");
         panelUser.classList.toggle("not-visible");
       });
-      
+           
       //Окно покупки
       var btnBuy = document.querySelectorAll(".item-actions-buy");
       var WindowAddCart = document.querySelector(".add-cart-window");
@@ -58,22 +58,5 @@
           }
           
         });    
-      } ;
-      /*//Поиск по щелчку
-      var btnSearch = document.querySelector(".search-form");
-      var labelSearch = document.querySelector(".search-form>label");
-      var iconSearch = document.querySelector(".icon-search");
-      var inputSearch = document.querySelector(".input-search");
-      
-      btnSearch.addEventListener("click", function(event){
-        event.preventDefault();
-        inputSearch.classList.toggle("not-visible"); 
-        labelSearch.classList.toggle("not-visible");         
-      });
-      
-      inputSearch.addEventListener("click", function(event){
-        event.preventDefault();
-        inputSearch.classList.toggle("not-visible"); 
-        labelSearch.classList.toggle("not-visible");         
-      });*/
+      } ;    
             
