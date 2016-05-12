@@ -1,5 +1,4 @@
 /*Подключаем PT SANS*/
-
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
@@ -32,8 +31,8 @@
     font-weight: bold;
     src: local("Cuprum Bold Italic"), url(../fonts/cuprumbolditalic.woff2), url(../fonts/cuprumbolditalic.woff);
 }
-/*Иконочный шрифт*/
 
+/*Иконочный шрифт*/
 @font-face {
     font-family: "symbols-technomart";
     font-style: normal;
@@ -42,7 +41,6 @@
 }
 /*==========================================*/
 /*Иконки опишем*/
-
 [class^="icon-"]::before,
 [class*="icon-"]::before {
     display: inline-block;
@@ -156,10 +154,10 @@ img {
     content: "";
 }
 /*сделать блок не видимым*/
-
 .not-visible {
     display: none;
 }
+
 .background-red {
     background-color: #ee3643;
 }
@@ -721,8 +719,8 @@ nav {
 .open-catalog:active {
     background-color: #ba2732;
 }
-/*Показываем по состоянию Radio Button*/
 
+/*Показываем по состоянию Radio Button*/
 .slider #drill:checked~.slider-controls-buttons label[for="drill"],
 .slider #perforator:checked~.slider-controls-buttons label[for="perforator"] {
     background: #ee3643;
@@ -733,16 +731,16 @@ nav {
 .slider #drill:checked~.slides {
     left: 0;
 }
-/*скрываем не нужную стрелку слево или справа*/
 
+/*скрываем не нужную стрелку слево или справа*/
 .slider #drill:checked~.slider-controls-arrows label[for="drill"]::after,
 .slider #perforator:checked~.slider-controls-arrows label[for="perforator"]::after {
     opacity: 0;
     cursor: default;
 }
+
 /*============item карта товара=================*/
 /*карточка товара*/
-
 .item-actions {
     display: none;
     width: 218px;
@@ -916,7 +914,7 @@ nav {
     float: left;
     margin-right: 20px;
 }
-.goods-item:last-child {
+.goods-item:nth-child(4n+1) {
     margin-right: 0;
 }
 /*--------------------------------*/
@@ -2035,6 +2033,26 @@ input[type="submit"] {
     border: 3px solid #ee3643;
     border-radius: 2px;
 }
+/*анимация feedback */
+@-webkit-keyframes flash {
+    from {top: 120%; left: 120%;}
+    to {top: 20%; left: 35%;}   
+}
+@keyframes flash {
+    from {top: 120%; left: 120%;}
+    to {top: 20%; left: 35%;}   
+}
+   
+.flash {
+    -webkit-animation-name: flash;
+            animation-name: flash;   
+    -webkit-animation-duration: 2s;   
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+/*карта*/
 .iframe-map {
     frameborder: 0;
     border: 0;
